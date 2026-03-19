@@ -106,7 +106,7 @@ Some of the softwares might have some basic vector editing capabilities, but are
 
 #### _Filling requests_
 
-To ensure that icons have been made correctly based of the CONTRIBUTING guidelines, **all contributers must create a submission issue or pull request for filling requests** (excludes organisation members).
+To ensure that icons have been made correctly based of the CONTRIBUTING guidelines, **all contributers must create a pull request for filling requests** (excludes organisation members).
 
 ### Finding source images
 Search through the logo resources to find a vector-based image (SVG, AI, EPS, PDF).
