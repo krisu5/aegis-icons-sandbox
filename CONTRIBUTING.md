@@ -91,11 +91,10 @@ These softwares are mostly for photo / image editing and aren't designed for vec
 
 Some of the softwares might have some basic vector editing capabilities, but aren't good enough for e.g. combining logos into one path or creating SVGs without lot of bloat code.
 
-### Repository submitting options
-Before creating icons, contributors should decide which way to submit icon creations:
+### Submitting to the repository
 
-- **Option 1:** Fork this project and submit via pull request *a.k.a. PR* **(recommended)**.
-  - :information_source: [GitHub Desktop](https://desktop.github.com/) is recommended as a GUI software for this process.
+- Fork this project and submit via pull request *(a.k.a. PR)*.
+  - :information_source: [GitHub Desktop](https://desktop.github.com/) is recommended as a GUI software for this process, especially if you're newcomer.
   - First, **fork the project** ([how to fork the project in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#forking-a-repository)).
   - Sidenote: **creating changes in new branch(es)** instead of using `master` branch is **highly recommended**.
     - This approach allows for submitting multiple PRs with ease without aegis-icons's own `master` branch updates interfering.
@@ -104,10 +103,6 @@ Before creating icons, contributors should decide which way to submit icon creat
     - When writing a commit message for an icon addition or fix, please reference the corresponding issue number (e.g., `#123 New icon: whatever` or `#321 Fix icon: coolbrand`). This ensures the corresponding issue is automatically closed with a helpful comment and a direct link to the new or updated icon.
   - When ready to submit to aegis-icons, **[create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).**
     - [Quick link for aegis-icons's PR submission page](https://github.com/aegis-icons/aegis-icons/compare).
-
-- **Option 2:** Submit the icon for review by [opening a new issue](../../issues/new/choose) (select "Icon submission") and add the file(s) / info.
-  - This is the easiest option, but can become more complicated route later on if new changes are needed.
-  - Submitting via new issue is also more inconvenient to the maintainers.
 
 #### _Filling requests_
 
