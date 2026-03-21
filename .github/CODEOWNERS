@@ -1,6 +1,7 @@
-# Only allow SVG related merges if accepted by the named maintainers
+# Only allow SVG related PR merges if accepted by the named maintainers
 # Temporarily only @krisu5 will allow changes
 # Rights will be given to @Goldmaster after @krisu5 is absolutely sure that they follow and understand guidelines
+# Shouldn't effect merging without PRs (let me know if it does)
 
 *.svg                 @krisu5
 /.github/CODEOWNERS   @krisu5
