@@ -1,0 +1,6 @@
+# Only allow SVG related merges if accepted by the named maintainers
+# Temporarily only @krisu5 will allow changes
+# Rights will be given to @Goldmaster after @krisu5 is absolutely sure that they follow and understand guidelines
+
+*.svg                 @krisu5
+/.github/CODEOWNERS   @krisu5
