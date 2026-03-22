@@ -84,3 +84,11 @@ Fill this part based of this information:
       - Give the HTML element name (eg. #footer) AND also URL of the page.
 
 After this line, comments can be added freely. Thank you for following the instructions. -->
+
+<!-- ▲▲▲ REQUIRED! -->
+
+<!-- This ensures that new products and services have a time to get used and are not "vibe coded in a weekend". -->
+- [ ] I`am **not** the creator or ower of this product or service, and i am a 3rd party end user.
+
+- [ ] This pull request and icon have done by myself and not completely by ai.
+
