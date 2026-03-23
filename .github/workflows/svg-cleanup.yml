@@ -6,9 +6,12 @@ on:
       - master
     paths:
       - 'icons/**/*.svg'
+
   pull_request:
+    types: [opened, synchronize, reopened]
     paths:
       - 'icons/**/*.svg'
+
   workflow_dispatch:
 
 jobs:
@@ -17,30 +20,25 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
-          # Checkout the head ref for PRs to allow pushing back (if same repo)
-          # or the ref for push events.
-          ref: ${{ github.head_ref || github.ref }}
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-          # Set registry to public npm to avoid potential auth issues
-          registry-url: 'https://registry.npmjs.org'
 
       - name: Install SVGO
-        # Pin to version 2 to ensure compatibility with --pretty and --indent flags used in CONTRIBUTING.md
         run: |
           npm install svgo@2 --no-save
           echo "$(pwd)/node_modules/.bin" >> $GITHUB_PATH
 
       - name: Run SVGO
-        run: |
-          bash _compress/optimise.sh
+        run: bash _compress/optimise.sh
 
       - name: Commit and push changes
         run: |
@@ -48,19 +46,11 @@ jobs:
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-            # Ensure we are on the correct branch for pushing
-            if [ -n "${{ github.head_ref }}" ]; then
-              BRANCH_NAME="${{ github.head_ref }}"
-            else
-              BRANCH_NAME="${{ github.ref_name }}"
-            fi
-            git checkout -B $BRANCH_NAME
-
             git add icons/
             git commit -m "style: apply SVG compression and cleanup"
 
-            git pull --rebase origin $BRANCH_NAME
-            git push origin $BRANCH_NAME
+            # Only push if we have permission (i.e., not a fork)
+            git push || echo "Push failed (likely a fork PR). Please apply changes manually."
           else
             echo "No changes detected."
           fi
