@@ -42,10 +42,8 @@ jobs:
         run: |
           set -euo pipefail
 
-          # Determine diff range: for PRs use base.sha, for pushes use event.before..event.after
           if [ "${GITHUB_EVENT_NAME}" = "pull_request" ]; then
             BASE_SHA="$(jq -r .pull_request.base.sha "$GITHUB_EVENT_PATH")"
-            # Ensure base SHA is present locally
             git fetch origin "$BASE_SHA" || true
             RANGE="$BASE_SHA..HEAD"
           else
@@ -57,10 +55,7 @@ jobs:
             fi
           fi
 
-          # List added or modified SVGs only
           CHANGED=$(git diff --name-only --diff-filter=AM "$RANGE" -- 'icons/**/*.svg' || true)
-
-          # Normalize output (remove empty lines)
           CHANGED=$(printf "%s\n" "$CHANGED" | sed '/^$/d' || true)
 
           echo "changed_files<<EOF" >> "$GITHUB_OUTPUT"
@@ -79,13 +74,21 @@ jobs:
       - name: Run SVGO on changed files only
         run: |
           set -euo pipefail
-          # Build array of files (one per line)
-          IFS=$'\n' read -r -d '' -a FILES <<< "${{ steps.changed.outputs.changed_files }}"$'\0'
 
-          for f in "${FILES[@]}"; do
-            [ -z "$f" ] && continue
+          CHANGED="${{ steps.changed.outputs.changed_files }}"
+          if [ -z "$CHANGED" ]; then
+            echo "No changed files to process."
+            exit 0
+          fi
+
+          # Iterate each non-empty line safely
+          printf "%s\n" "$CHANGED" | sed '/^$/d' | while IFS= read -r f; do
             if [ -f "$f" ]; then
-              npx svgo "$f"
+              echo "Optimising: $f"
+              npx --no-install svgo "$f" || {
+                echo "svgo failed on $f"
+                exit 1
+              }
             else
               echo "Skipping missing file: $f"
             fi
@@ -104,7 +107,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-          # Add only existing changed files (skip deleted)
           echo "$FILES" | while read -r f; do
             [ -n "$f" ] || continue
             [ -f "$f" ] && git add "$f"
@@ -112,7 +114,6 @@ jobs:
 
           if [ -n "$(git diff --cached --name-only)" ]; then
             git commit -m "style: apply SVG compression and cleanup"
-            # Try push; in forked PRs this will fail and is handled gracefully
             git push || echo "Push failed (likely a fork PR). Please apply changes manually."
           else
             echo "No staged changes to commit."
