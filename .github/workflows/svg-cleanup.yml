@@ -42,15 +42,32 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          if [ -n "$(git status --porcelain icons/)" ]; then
+          # Get list of changed files under icons/ (both tracked and new)
+          CHANGED=$(git status --porcelain=1 | awk '{print $2}' | grep '^icons/' || true)
+
+          # Also include files that were modified by svgo but already tracked (git diff)
+          DIFF_CHANGED=$(git ls-files -m | grep '^icons/' || true)
+
+          # Combine unique file paths
+          FILES=$(printf "%s\n%s\n" "$CHANGED" "$DIFF_CHANGED" | sort -u | sed '/^$/d' || true)
+
+          if [ -n "$FILES" ]; then
             git config --global user.name 'github-actions[bot]'
             git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-            git add icons/
-            git commit -m "style: apply SVG compression and cleanup"
+            # Ensure every file still exists (skip deleted files) and add them
+            echo "$FILES" | while read -r f; do
+              [ -f "$f" ] && git add "$f"
+            done
 
-            # Only push if we have permission (i.e., not a fork)
-            git push || echo "Push failed (likely a fork PR). Please apply changes manually."
+            # Only commit if staging area has changes
+            if [ -n "$(git diff --cached --name-only)" ]; then
+              git commit -m "style: apply SVG compression and cleanup"
+              git push || echo "Push failed (likely a fork PR). Please apply changes manually."
+            else
+              echo "No files to commit after filtering."
+            fi
           else
-            echo "No changes detected."
+            echo "No changes detected in icons/."
           fi
+
