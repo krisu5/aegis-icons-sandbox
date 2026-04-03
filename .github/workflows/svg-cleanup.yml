@@ -37,37 +37,85 @@ jobs:
           npm install svgo@2 --no-save
           echo "$(pwd)/node_modules/.bin" >> $GITHUB_PATH
 
-      - name: Run SVGO
-        run: bash _compress/optimise.sh
-
-      - name: Commit and push changes
+      - name: Get list of changed SVGs
+        id: changed
         run: |
-          # Get list of changed files under icons/ (both tracked and new)
-          CHANGED=$(git status --porcelain=1 | awk '{print $2}' | grep '^icons/' || true)
+          set -euo pipefail
 
-          # Also include files that were modified by svgo but already tracked (git diff)
-          DIFF_CHANGED=$(git ls-files -m | grep '^icons/' || true)
-
-          # Combine unique file paths
-          FILES=$(printf "%s\n%s\n" "$CHANGED" "$DIFF_CHANGED" | sort -u | sed '/^$/d' || true)
-
-          if [ -n "$FILES" ]; then
-            git config --global user.name 'github-actions[bot]'
-            git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-
-            # Ensure every file still exists (skip deleted files) and add them
-            echo "$FILES" | while read -r f; do
-              [ -f "$f" ] && git add "$f"
-            done
-
-            # Only commit if staging area has changes
-            if [ -n "$(git diff --cached --name-only)" ]; then
-              git commit -m "style: apply SVG compression and cleanup"
-              git push || echo "Push failed (likely a fork PR). Please apply changes manually."
-            else
-              echo "No files to commit after filtering."
-            fi
+          if [ "${GITHUB_EVENT_NAME}" = "pull_request" ]; then
+            BASE_SHA="$(jq -r .pull_request.base.sha "$GITHUB_EVENT_PATH")"
+            git fetch origin "$BASE_SHA" || true
+            RANGE="$BASE_SHA..HEAD"
           else
-            echo "No changes detected in icons/."
+            BEFORE="$(jq -r .before "$GITHUB_EVENT_PATH" 2>/dev/null || true)"
+            if [ -n "$BEFORE" ] && [ "$BEFORE" != "0000000000000000000000000000000000000000" ]; then
+              RANGE="$BEFORE..${GITHUB_SHA}"
+            else
+              RANGE="HEAD^..HEAD"
+            fi
+          fi
+
+          CHANGED=$(git diff --name-only --diff-filter=AM "$RANGE" -- 'icons/**/*.svg' || true)
+          CHANGED=$(printf "%s\n" "$CHANGED" | sed '/^$/d' || true)
+
+          echo "changed_files<<EOF" >> "$GITHUB_OUTPUT"
+          printf "%s\n" "$CHANGED" >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+      - name: Show changed SVGs and exit if none
+        run: |
+          echo "Changed SVGs:"
+          echo "${{ steps.changed.outputs.changed_files }}"
+          if [ -z "${{ steps.changed.outputs.changed_files }}" ]; then
+            echo "No changed SVGs to process, skipping."
+            exit 0
+          fi
+
+      - name: Run SVGO on changed files only
+        run: |
+          set -euo pipefail
+
+          CHANGED="${{ steps.changed.outputs.changed_files }}"
+          if [ -z "$CHANGED" ]; then
+            echo "No changed files to process."
+            exit 0
+          fi
+
+          # Iterate each non-empty line safely
+          printf "%s\n" "$CHANGED" | sed '/^$/d' | while IFS= read -r f; do
+            if [ -f "$f" ]; then
+              echo "Optimising: $f"
+              npx --no-install svgo "$f" || {
+                echo "svgo failed on $f"
+                exit 1
+              }
+            else
+              echo "Skipping missing file: $f"
+            fi
+          done
+
+      - name: Commit and push only changed files
+        run: |
+          set -euo pipefail
+
+          FILES="${{ steps.changed.outputs.changed_files }}"
+          if [ -z "$FILES" ]; then
+            echo "No files to commit."
+            exit 0
+          fi
+
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+          echo "$FILES" | while read -r f; do
+            [ -n "$f" ] || continue
+            [ -f "$f" ] && git add "$f"
+          done
+
+          if [ -n "$(git diff --cached --name-only)" ]; then
+            git commit -m "style: apply SVG compression and cleanup"
+            git push || echo "Push failed (likely a fork PR). Please apply changes manually."
+          else
+            echo "No staged changes to commit."
           fi
 
