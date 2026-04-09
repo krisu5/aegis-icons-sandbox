@@ -112,7 +112,7 @@ These softwares are either:
 
 ---
 
-#### _1. Brand assets & branding guidelines on the company website_
+#### _1. Brand assets (logos) & guidelines on the company website_
 
 > [!CAUTION]
 > **MANDATORY TO CHECK FIRST BEFORE OTHER SECTIONS!**
@@ -140,9 +140,10 @@ site:offical-address-for-app-or-site-here.com brand OR logo OR media OR press
 > - GitHub has ["Brand Toolkit" page](https://brand.github.com/), it has downloadable logos and guidelines for using logos, color etc.
 > - Zenkit has ["Press Kit" page](https://zenkit.com/en/press-kit), that has ZIP file containing all the logos.
 
-If you **did** found the logo files, _check that there's vector files (SVG, AI, EPS, PDF) and not just raster files._
+- If you **found** the logo files, _check that there's vector files (SVG, AI, EPS, PDF) and not just raster files._
+  - If you also found the brand guidelines (a.k.a. brand guide / toolkit / book / standards, visual identity, style guide, logo guidelines etc.), keep them handy and don't lose them.
 
-If you **didn't** find anything after all these steps, _then go to the next step:_
+If you **didn't find** anything after all these steps, _then go to the next step:_
 
 ---
 
