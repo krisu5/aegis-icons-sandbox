@@ -81,6 +81,7 @@ Lists of softwares that are suitable for making vectors (and opposite).
 
 - Adobe Photoshop
 - Affinity Photo
+- Canva
 - Clip Studio Paint
 - GIMP
 - Krita
