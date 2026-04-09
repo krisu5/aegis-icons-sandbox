@@ -91,19 +91,6 @@ These softwares are mostly for photo / raster image editing and aren't designed 
 
 Some of the softwares *might* have some basic vector editing capabilities, but aren't good enough for e.g. combining logos into one path or creating SVGs without lot of bloat code.
 
-### Submitting to the repository
-
-- Fork this project and submit via pull request *(a.k.a. PR)*.
-  - :information_source: [GitHub Desktop](https://desktop.github.com/) is recommended as a GUI software for this process, especially if you're newcomer.
-  - First, **fork the project** ([how to fork the project in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#forking-a-repository)).
-  - Sidenote: **creating changes in new branch(es)** instead of using `master` branch is **highly recommended**.
-    - This approach allows for submitting multiple PRs with ease without aegis-icons's own `master` branch updates interfering.
-    - [Creating branches in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#creating-a-branch) (remember to also [publish that branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#publishing-a-branch) after creating one).
-  - When icon is finished, fixed, tweaked or have any new changes, **create new commit** ([creating new commits in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project#write-a-commit-message-and-push-your-changes)).
-    - When writing a commit message for an icon addition or fix, please reference the corresponding issue number (e.g., `#123 New icon: whatever` or `#321 Fix icon: coolbrand`). This ensures the corresponding issue is automatically closed with a helpful comment and a direct link to the new or updated icon.
-  - When ready to submit to aegis-icons, **[create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).**
-    - [Quick link for aegis-icons's PR submission page](https://github.com/aegis-icons/aegis-icons/compare).
-
 ### Finding source images
 Search through the logo resources to find a vector-based image (SVG, AI, EPS, PDF).
 
@@ -318,6 +305,20 @@ Next, do SVG compression & cleanup.
 > **Test the SVG on the web browser** that the svg still works after edits! (drag-and-drop SVG to tab bar or *"Open File..." shortcut:* <kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>O</kbd>).
 
 When everything is done and ready to go, [submit icons with either as pull request or issue](#repository-submitting-options).
+
+### Submitting to the repository
+
+- Fork this project and submit via pull request *(a.k.a. PR)*.
+  - :information_source: [GitHub Desktop](https://desktop.github.com/) is recommended as a GUI software for this process, especially if you're newcomer.
+  - First, **fork the project** ([how to fork the project in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#forking-a-repository)).
+  - Sidenote: **creating changes in new branch(es)** instead of using `master` branch is **highly recommended**.
+    - This approach allows for submitting multiple PRs with ease without aegis-icons's own `master` branch updates interfering.
+    - [Creating branches in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#creating-a-branch) (remember to also [publish that branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#publishing-a-branch) after creating one).
+  - When icon is finished, fixed, tweaked or have any new changes, **create new commit** ([creating new commits in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project#write-a-commit-message-and-push-your-changes)).
+    - When writing a commit message for an icon addition or fix, please reference the corresponding issue number (e.g., `#123 New icon: whatever` or `#321 Fix icon: coolbrand`). This ensures the corresponding issue is automatically closed with a helpful comment and a direct link to the new or updated icon.
+  - When ready to submit to aegis-icons, **[create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).**
+    - [Quick link for aegis-icons's PR submission page](https://github.com/aegis-icons/aegis-icons/compare).
+
 
 ## Technical
 
