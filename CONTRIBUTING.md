@@ -6,7 +6,7 @@
 Contributions to the project are appreciated!
 
 > [!CAUTION]
-> Contributing **requires basic knowledge of making / editing vectors with a vector graphics editor** (see the [software](#software) section). Instructions are provided for some steps, but not for everything.
+> Contributing **requires basic knowledge of making / editing vectors with a vector graphics editor** (see the [software](#software) section) and knowing [what SVG even is](https://developer.mozilla.org/en-US/docs/Web/SVG). Instructions are provided for some steps, but not for everything.
 
 ## Icon acceptability criteria
 
