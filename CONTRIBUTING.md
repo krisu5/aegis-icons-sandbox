@@ -141,7 +141,7 @@ site:offical-address-for-app-or-site-here.com brand OR logo OR media OR press
 > - Zenkit has ["Press Kit" page](https://zenkit.com/en/press-kit), that has ZIP file containing all the logos.
 
 - If you **found** the logo files, _check that there's vector files (SVG, AI, EPS, PDF) and not just raster files._
-  - If you also found the brand guidelines (a.k.a. brand guide / toolkit / book / standards, visual identity, style guide, logo guidelines etc.), keep them handy and don't lose them.
+  - If you also found the brand guidelines (a.k.a. brand guide / toolkit / book / standards, visual identity, style guide, logo guidelines etc.), _keep them handy and don't lose them._
 
 If you **didn't find** anything after all these steps, _then go to the next step:_
 
