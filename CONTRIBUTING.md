@@ -56,6 +56,8 @@ Before making or requesting an icon for an app / site, refer to the "acceptabili
 ### Software
 Lists of softwares that are suitable for making vectors (and opposite).
 
+---
+
 #### _Allowed_
 :heavy_check_mark: Most used and approved software, maintainers can possibly give you help with these:
 
@@ -75,6 +77,8 @@ Lists of softwares that are suitable for making vectors (and opposite).
 > [!NOTE]
 > If the software isn't listed here or in the prohibited section, **check the software's website:**
 > - **If the software mentions** being a _"vector graphics editor"_ (and **not** a _"photo/image editor"_), then the software is most likely acceptable as long as vectors can be saved as SVG. **But maintainers can't help with your vector creation problems.**
+
+---
 
 #### _Prohibited_
 :x: _Some_ of the softwares are not approved. **Change to one of the allowed softwares or cancel the creation of the icon.**
@@ -98,6 +102,8 @@ These softwares are either:
 
 > [!IMPORTANT]
 > Go though these options **in order!**
+
+---
 
 #### _1. Brand assets & branding guidelines on the company website_
 > :warning: **Mandatory to check first!**
@@ -125,30 +131,30 @@ site:offical-address-for-app-or-site-here.com brand OR logo OR media OR press
 > - GitHub has ["Brand Toolkit" page](https://brand.github.com/), it has downloadable logos and guidelines for using logos, color etc.
 > - Zenkit has ["Press Kit" page](https://zenkit.com/en/press-kit), that has ZIP file containing all the logos.
 
-**D.1.** If you did found the logo files, _check that there's vector files (SVG, AI, EPS, PDF) and not just raster files._
+If you **did** found the logo files, _check that there's vector files (SVG, AI, EPS, PDF) and not just raster files._
 
-**D.2.** If you didn't find anything after all these steps, _then go to the next step:_
+If you **didn't** find anything after all these steps, _then go to the next step:_
+
+---
 
 #### _2. Embedded logo(s) on the company website_
 **Easiest and recommended way** for finding / downloading SVGs from web pages is using [SVG Gobbler](https://www.svggobbler.com) browser extension (Chromium & Firefox, [open source](https://github.com/rossmoody/svg-gobbler)).
 
 <details>
-<summary><i>Ways without extension</i></summary>
+<summary><code>[ Ways without extension ]</code></summary>
 
----
-
-**A.** Try right-clicking logo image and selecting <kbd><i>Save image as...</i></kbd>, and see if the save dialogue appears with SVG (not as JPG, PNG, GIF, WebP or [any other raster graphic format](https://en.wikipedia.org/wiki/Image_file_formats#Raster_formats)).
-
-- If right-clicking the image does not have an option for <kbd><i>Save image as...</i></kbd>, try using <kbd><i>Inspect</i></kbd> at the bottom of the right-click menu. This opens the developer tools which can reveal hidden URLs.
-- Sometimes SVG is embedded as inline. This means that instead of linking to an external file, the whole SVG file code is added to the HTML site code (see [SVG code example](https://gist.github.com/krisu5/677a8a3478331498929a11b900741aa2)). In that case, copy the SVG code completely from HTML (website embedded SVG starts with `<svg` & so forth and ends with `</svg>`), open a text editor and save copypasted text as `filename.svg`. To test if the file works, open the file into a web browser (drag-and-drop SVG to tab bar or *shortcut:* <kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>O</kbd>).
-
-**B.** Right-click the website and select <kbd><i>View page source</i></kbd>, then press <kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>F</kbd> to open the search tool and type `SVG` to look for possible SVG vector files. Web inspector is also useful and better tool for some users / use cases (press <kbd>F12</kbd> on the website, go to "Inspector" / "Elements" tab, then press <kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>F</kbd> to search).
-
----
+> **A.** Try right-clicking logo image and selecting <kbd><i>Save image as...</i></kbd>, and see if the save dialogue appears with SVG (not as JPG, PNG, GIF, WebP or [any other raster graphic format](https://en.wikipedia.org/wiki/Image_file_formats#Raster_formats)).
+>
+> - If right-clicking the image does not have an option for <kbd><i>Save image as...</i></kbd>, try using <kbd><i>Inspect</i></kbd> at the bottom of the right-click menu. This opens the developer tools which can reveal hidden URLs.
+> - Sometimes SVG is embedded as inline. This means that instead of linking to an external file, the whole SVG file code is added to the HTML site code (see [SVG code example](https://gist.github.com/krisu5/677a8a3478331498929a11b900741aa2)). In that case, copy the SVG code completely from HTML (website embedded SVG starts with `<svg` & so forth and ends with `</svg>`), open a text editor and save copypasted text as `filename.svg`. To test if the file works, open the file into a web browser (drag-and-drop SVG to tab bar or *shortcut:* <kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>O</kbd>).
+>
+> **B.** Right-click the website and select <kbd><i>View page source</i></kbd>, then press <kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>F</kbd> to open the search tool and type `SVG` to look for possible SVG vector files. Web inspector is also useful and better tool for some users / use cases (press <kbd>F12</kbd> on the website, go to "Inspector" / "Elements" tab, then press <kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>F</kbd> to search).
 
 </details>
 
 If you didn't find anything good with these steps, _then go to the next step:_
+
+---
 
 #### _3. Check the unofficial logo resources_
 If everything has failed so far, then check out [unofficial logo resources](#unofficial-logo-resources) section and go through those sites.
@@ -158,6 +164,8 @@ If everything has failed so far, then check out [unofficial logo resources](#uno
 
 If you didn't find correct match on those resources, _then go to the next step:_
 
+---
+
 #### _4. Use image tracing or do manual recreation_
 As a last resort, [image tracing](#image-tracing-tools) with raster images can be attempted.
 
@@ -165,6 +173,8 @@ As a last resort, [image tracing](#image-tracing-tools) with raster images can b
 > Only use tools recommended in the "image tracing tools" section. _Using image trace tool outside of the list is not acceptable._
 
 Making a vectorised logo from scratch is also an option with the necessary skills, time and patience.
+
+---
 
 #### _General notices for source images_
 > [!CAUTION]
