@@ -44,7 +44,7 @@ Before making or requesting an icon for an app / site, refer to the "acceptabili
 
 - Apps / sites **not** having Aegis supported 2FA support.
   - Also when service has officially discontinued 3rd party 2FA support (only supporting legacy users) and no known workaround for new users.
-- Apps / sites **focusing** on **highly** immoral and illegal activity / material.
+- Apps / sites **focusing** on **highly** immoral and/or illegal activity / material.
   - *Examples (not limited to):* black hat hacking, malware, malvertising, money laundering, scams, illegal or highly controversal sexual material / services, harassment / cyberbullying.
 - Shady apps / sites
   - *Examples (not limited to):* really private sites with no info on the web, sites with poor reputation.
