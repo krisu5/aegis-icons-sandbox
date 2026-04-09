@@ -105,7 +105,7 @@ These softwares are either:
 2. Too basic for proper vector creation.
    - E.g. can't combine logos into one singular path, can't create SVGs without huge amount of bloat.
 
-### Finding source images
+### Finding the source material
 
 > [!IMPORTANT]
 > Go though these options **in order!**
@@ -188,7 +188,7 @@ Making a vectorised logo from scratch is also an option with the necessary skill
 
 ---
 
-#### _General notices for source images_
+#### _General notes for source material_
 
 > [!CAUTION]
 > - **Never** use JPG, PNG, GIF, WebP or other raster images **(as is)!**
