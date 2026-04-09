@@ -92,7 +92,7 @@ These softwares are either:
 
 1. For photo / raster image editing (and not designed for vector creating).
 2. Too basic for proper vector creation.
-   - E.g. can't combining logos into one singular path, can't create SVGs without huge amount of bloat.
+   - E.g. can't combine logos into one singular path, can't create SVGs without huge amount of bloat.
 
 
 ### Finding source images
