@@ -1,22 +1,21 @@
 # Contributing
-Contributions to the project are appreciated!
 
-*This documentation is long and comprehensive, because the project strives for high quality for the icons and aims to minimize extra work as much as possible.*
+> [!WARNING]
+> **As of 2026-04-09, CONTRIBUTING documentation has currently ongoing overhaul!** Things might change in any time without notice.
+
+Contributions to the project are appreciated!
 
 > [!CAUTION]
 > Contributing **requires basic knowledge of making / editing vectors with a vector graphics editor** (see the [software](#software) section). Instructions are provided for some steps, but not for everything.
 
-> [!NOTE]
-> Having some **knowledge of graphic design** and design in general is **highly recommended**.
-
 ## Icon acceptability criteria
-Before making or requesting an icon for an app/site, refer to the "acceptability criteria".
+Before making or requesting an icon for an app / site, refer to the "acceptability criteria".
 
 ### Approved
 :heavy_check_mark: *Almost* always accepted to request or submit.
 
 - Apps / sites that are popular and has Aegis supported 2FA support **(specially wanted).**
-  - *Examples (not limited to):* social media, productivity tools, cloud services, development tools, gaming related etc.
+  - *Examples (not limited to):* social media, productivity tools, cloud services, development tools, gaming related.
 - Almost any app / site / service, **that doesn't have the exceptions from below.**
   - Still in spite of this, aegis-icons has right to reject requests or submissions if needed or necessary.
 
@@ -29,19 +28,16 @@ Before making or requesting an icon for an app/site, refer to the "acceptability
   - *Exception:* really popular forums can get their own icons (at least **over 250,000 total members** and high posting activity).
 - Platforms that icon requester / submitter is the creator or owner of the platform itself.
   - Requests for free work or self-advertising are not accepted.
-  - *Exception:* if platform is actually popular and has potential users for Aegis.
+  - *Exception:* if platform is actually popular and has potential users for Aegis (see *self-hosted or similar software* for measurement methods).
 - Self-hosted or similar software.
   - A suggestion is to have ≥ 500 GitHub/GitLab stars or other non-maintainer activity to support the request.
-  - If the previously mentioned metrics aren't available, then popularity is measured based on search results.
+  - If the previously mentioned metrics aren't available, then popularity is measured based on number of search results.
 - Adult content, piracy & gambling related sites / apps / services.
   - Mostly acceptable, **but** submissions must not break **any** of the "not approved" bullet points.
   - These services are **always** researched from any "not approved" points before accepting.
 - App / site being too vague.
-  - *Examples (not limited to):* site only has login page and nothing else, search results don't answer what that app / site is either.
-  - Stating what the app or site does is not enough; there must be at least **some** evidence from the web. Otherwise, the app or site falls into the *shady apps / sites* category.
-- Ad networks.
-  - Most of them belongs to *shady apps / sites* category, because often these services violate privacy on other users expense and trick users for unwanted things.
-  - *Exception:* ad networks with ethical standpoints (minimal or no user tracking / data collecting, no dark patterns, high advertiser monitoring etc).
+  - *Examples (not limited to):* site only has login page and nothing else.
+  - Stating what the app or site does is not enough; there must be at least **some** evidence on the web. Otherwise, the app or site falls into the *shady apps / sites* category.
 
 ### Not approved
 :x: These are never accepted to aegis-icons, **no exceptions!**
@@ -49,9 +45,10 @@ Before making or requesting an icon for an app/site, refer to the "acceptability
 - Apps / sites **not** having Aegis supported 2FA support.
   - Also when service has officially discontinued 3rd party 2FA support (only supporting legacy users) and no known workaround for new users.
 - Apps / sites **focusing** on **highly** immoral and illegal activity / material.
-  - *Examples (not limited to):* black hat hacking, malware, malvertising, money laundering, illegal or highly controversal sexual material / services, harassment / cyberbullying etc.
-- Scams or other shady apps / sites.
-- :warning: **Only for icon submissions:** submitting unmodified SVGs / [raster images](https://simple.wikipedia.org/wiki/Raster_graphics) from the web.
+  - *Examples (not limited to):* black hat hacking, malware, malvertising, money laundering, scams, illegal or highly controversal sexual material / services, harassment / cyberbullying.
+- Shady apps / sites
+  - *Examples (not limited to):* really private sites with no info on the web, sites with poor reputation.
+- :stop_sign: **Only for icon submissions:** submitting unmodified SVGs / [raster images](https://simple.wikipedia.org/wiki/Raster_graphics) from the web.
   - Icons must be designed manually for submissions.
 
 ## Icon creation walkthrough
@@ -60,21 +57,24 @@ Before making or requesting an icon for an app/site, refer to the "acceptability
 Lists of softwares that are suitable for making vectors (and opposite).
 
 #### _Allowed_
-:heavy_check_mark: Most used and approved software.
+:heavy_check_mark: Most used and approved software, maintainers can possibly give you help with these:
 
-These are recommended because the maintainer can give advice/help for these softwares:
-
-- [Adobe Illustrator](https://adobe.com/products/illustrator) (industry standard, most used software in this repository)
-- [Affinity Designer](https://affinity.serif.com/designer) (way cheaper but powerful and better alternatives to Illustrator)
-- [Figma](https://figma.com) (more known as interface design tool, but has good enough vector functions for making icons as well)
+- [Adobe Illustrator](https://adobe.com/products/illustrator) (industry standard)
+- [Affinity by Canva](https://affinity.studio/) (professional freeware creative suite, **remember to select [vector view mode](https://www.affinity.studio/help/design-aids-view-modes/#how-to-display-specific-modes)**)
+  - [Affinity Designer v1 or v2](https://affinity.serif.com/en-gb/v2/) (discontinued, but if own a license then it's totally usable too)
+- [Graphite](https://graphite.art/) (new, but great open source vector graphics editor)
 - [Inkscape](https://inkscape.org) (popular open source option)
 
-If the software isn't listed here or in the prohibited section, **check the software's website.**
+:grey_question: Common software that's allowed, but maintainers can't help with these:
 
-**If the software mentions** being a *"vector graphics editor"* (and **not** a *"photo/image editor"*), then the software is most likely acceptable as long as vectors can be saved as SVG.
+- [Figma](https://figma.com) (more known as interface design tool, but has good vector functions for making icons as well, use it only if you know how to use it for vector creation purpose)
+- [Penpot](https://penpot.app/) (same as Figma, but open source)
+- CorelDRAW [Standard](https://www.coreldraw.com/en/product/coreldraw/standard/) or [Creative Suite](https://www.coreldraw.com/en/product/coreldraw/) (old school professional software)
+- [Linearity Curve](https://www.linearity.io/curve/) (macOS only vector graphics editor)
 
 > [!NOTE]
-> If the software is outside of the mentioned list, then there is no help or support for vector creation problems.
+> If the software isn't listed here or in the prohibited section, **check the software's website:**
+> - **If the software mentions** being a *"vector graphics editor"* (and **not** a *"photo/image editor"*), then the software is most likely acceptable as long as vectors can be saved as SVG. **But maintainers can't help with your vector creation problems.**
 
 #### _Prohibited_
 :x: *Some* of the softwares are not approved. **Change to one of the allowed softwares or cancel the creation of the icon.**
@@ -87,9 +87,9 @@ If the software isn't listed here or in the prohibited section, **check the soft
 - Paint.NET
 - [(And more...)](https://en.wikipedia.org/wiki/Comparison_of_raster_graphics_editors#List)
 
-These softwares are mostly for photo / image editing and aren't designed for vector creating.
+These softwares are mostly for photo / raster image editing and aren't designed for vector creating.
 
-Some of the softwares might have some basic vector editing capabilities, but aren't good enough for e.g. combining logos into one path or creating SVGs without lot of bloat code.
+Some of the softwares *might* have some basic vector editing capabilities, but aren't good enough for e.g. combining logos into one path or creating SVGs without lot of bloat code.
 
 ### Submitting to the repository
 
@@ -103,10 +103,6 @@ Some of the softwares might have some basic vector editing capabilities, but are
     - When writing a commit message for an icon addition or fix, please reference the corresponding issue number (e.g., `#123 New icon: whatever` or `#321 Fix icon: coolbrand`). This ensures the corresponding issue is automatically closed with a helpful comment and a direct link to the new or updated icon.
   - When ready to submit to aegis-icons, **[create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).**
     - [Quick link for aegis-icons's PR submission page](https://github.com/aegis-icons/aegis-icons/compare).
-
-#### _Filling requests_
-
-To ensure that icons have been made correctly based of the CONTRIBUTING guidelines, **all contributers must create a pull request for filling requests** (excludes organisation members).
 
 ### Finding source images
 Search through the logo resources to find a vector-based image (SVG, AI, EPS, PDF).
