@@ -444,50 +444,63 @@ When everything is done and ready to go, [submit icons with either as pull reque
 
 - Primary icons ➜
   - `/icons/1_Primary/` folder.
-  - *Means all the logo based icons that aren't variations / alternatives.*
+  - _Means all the logo based icons that aren't variations / alternatives._
 - Variation and alternative icons ➜
   - `/icons/2_Variations/` folder.
+  - _[What's the variation icon?](#bgvar-fgvar--fgbgvar-icons)_
+  - _[What's the alternative icon?](#alternative-icons)_
 - Generic icons ➜
   - `/icons/3_Generic/` folder.
+  - _[What's the generic icon?](#generic-icons)_
 <br>
 
 ### Filename
 
-> [!CAUTION]
-> When naming brand based icon(s), check how brand capitalised and spell the name from their app / website (check the capitalisation / spelling from browser tab title or body text of the website, **not from the logo!**).
+> [!IMPORTANT]
+> 1. **Correct spelling:** When naming brand based icon(s), check how brand capitalised and spell the name from their app / website (check the capitalisation / spelling from browser tab title or body text of the website, **not from the logo!**).
+> 2. **Filename character limitations:** Only use [ISO basic Latin alphabet letters](https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet), numbers, spaces, dashes and other safe ASCII characters ([check the "forbidden printable ASCII characters"](https://stackoverflow.com/questions/1976007/what-characters-are-forbidden-in-windows-and-linux-directory-names/31976060#31976060) for characters that aren't allowed).
 
-> [!NOTE]
-> **Filename character limitations:** Only use [ISO basic Latin alphabet letters](https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet), numbers, spaces, dashes and other safe ASCII characters ([list of forbidden ASCII](https://stackoverflow.com/questions/1976007/what-characters-are-forbidden-in-windows-and-linux-directory-names/31976060#31976060)).
-
-- Primary icon:
+- **Primary icons:**
   - `[Company / product / app / site name].<ext>`
   - *Examples:* `Adobe.svg`, `Best Buy.svg`, `FACEIT.svg`, `itch.io.svg`
-- Icon variations with alternate logo:
-  - `[Primary icon name] alt.<ext>`
-  - *Example:* `IVPN alt.svg`
-- Icon variations with black foreground or different background colour:
+  
+- **Icon variations with different background colour _OR_ black foreground:**
   - `[Primary icon name] bg.var.<ext>`
   - `[Primary icon name] fg.var.<ext>`
   - *Examples:* `Squarespace bg.var.svg`, `Snapchat fg.var.svg`
-- Icon variations with black foreground **and** different background colour:
-  - `[Primary icon name] fg.bg.var.<ext>`
-  - *Example:* `Lichess fg.bg.var.svg`
-- Alt. icons with black foreground **or/and** different background colour:
-  - `[Primary icon name] alt bg.var.<ext>`
-  - `[Primary icon name] alt fg.var.<ext>`
-  - `[Primary icon name] alt fg.bg.var.<ext>`
-  - *Example:* `Discourse alt bg.var.svg`
-- Generic icon: 
-  - *Name as what the icon symbolises with big capital letter.*
+  
+- **Generic icons:** 
+  - *Name as what the icon symbolises that starts with capital letter.*
   - *Example:* `Cloud.svg`
+  
+<details>
+<summary>
+  <samp><ins>
+    Uncommon type of icons
+  </ins></samp>
+</summary>
+
+> - **Icon variations with black foreground _AND_ different background colour:**
+>   - `[Primary icon name] fg.bg.var.<ext>`
+>   - *Example:* `Lichess fg.bg.var.svg`
+> 
+> - **Icon variations with alternate logo:**
+>   - `[Primary icon name] alt.<ext>`
+>   - *Example:* `IVPN alt.svg`
+>
+> - **Alternative icons with different background colour _OR/AND_ black foreground:**
+>   - `[Primary icon name] alt bg.var.<ext>`
+>   - `[Primary icon name] alt fg.var.<ext>`
+>   - `[Primary icon name] alt fg.bg.var.<ext>`
+>   - *Example:* `Discourse alt bg.var.svg`
+</details>
   
 ---
 
 #### _Replacing icons with updated ones_
 
 - You can replace the icon file(s) with same brand name, if you're updating it in some way (new logo / branding or general fixes).
-- In rare cases, if the icon(s) is outdated as brand **and** name wise (ie. brand makes complete branding overhaul, [some actual cases](https://github.com/aegis-icons/aegis-icons/issues?q=f.k.a.))
-  - Then remove the icon(s) with old name and add new one(s) to the repository.
+- In rare cases, if the icon(s) is outdated as brand **and** name wise (ie. brand makes complete branding overhaul, [some actual cases](https://github.com/aegis-icons/aegis-icons/issues?q=f.k.a.)), then remove the icon(s) with old name and add new one(s) to the repository.
 <br>
 
 ### About JSONs
@@ -510,16 +523,19 @@ Resources for finding logos in vector format, when no official brand kit / vecto
 > [!CAUTION]
 > Remember to always double check if logo provided by these resources is the latest one the brand uses!
 
-- [Brandfetch](https://brandfetch.com) (not always accurate results)
-- [LogoSearch](https://logosear.ch) :star:
+_The best options in ranked order:_
+1. [Simple Icons](https://simpleicons.org) :star:
+2. Wikipedia pages of the brand :star:
+3. [VectorLogoZone](https://www.vectorlogo.zone/) :star:
+4. [Logo Search](https://logosear.ch) :star:
+
+_The other options:_
+- [Brandfetch](https://brandfetch.com) (unreliable sometimes)
 - [Seeklogo](https://seeklogo.com)
-- [Simple Icons](https://simpleicons.org) :star:
-- [VectorWiki](https://vectorwiki.com)
 - [Worldvectorlogo](https://worldvectorlogo.com)
 - [Wikimedia Commons](https://commons.wikimedia.org/wiki/Main_Page)
-- Wikipedia pages of the brand :star:
 
-More resources at [LogoSearch's "Alternative Logo Sources"](https://logosear.ch/sources/index.html) list.
+More resources listed at [Logo Search's "Alternative Logo Sources"](https://logosear.ch/sources/index.html).
 
 ---
 
@@ -563,7 +579,7 @@ In a nutshell, image tracing means converting raster image (PNG, JPG etc.) to ve
 
 Need to check if service has 2FA? These list apps / websites that support 2FA and in what kind of format.
 
-- [2FA Directory](https://2fa.directory/int) (*[GitHub commits](https://github.com/2factorauth/twofactorauth/commits/master)*)
+- [2FA Directory](https://2fa.directory/int/) (*[GitHub commits](https://github.com/2factorauth/twofactorauth/commits/master)*)
 
 ---
 
