@@ -243,7 +243,7 @@ Always use `svg_template.svg` as base for the icon.
 ### Using icon grid
 
 *Documentation coming soon... (krisu5 will add basic documentation for a start)*
-<br>
+<br><br>
 
 ### Combine logo vector into single path
 
@@ -268,7 +268,7 @@ Always use `svg_template.svg` as base for the icon.
 <details>
 <summary>
   <samp><ins>
-    How to do it on <b>Affinity Designer</b>
+    How to do it on <b>Affinity by Canva / Affinity Designer</b>
   </ins></samp>
 </summary>
 
@@ -277,13 +277,13 @@ Always use `svg_template.svg` as base for the icon.
 > 3. Ungroup multiple times until everything in the logo is ungrouped (<kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>Shift</kbd>+<kbd>G</kbd>).
 > 4. Unselect everything (click outside of canvas with "Move" tool).
 > 5. Repeat step 2.
->    - :information_source: **Before moving to step 6,** read and do "Note for Affinity Designer users" part downwards.
+>    - :information_source: **Before moving to step 6,** read "Important step for Affinity by Canva / Affinity Designer" note below and do the requested extra steps.
 > 6. Combine logo (*menu:* <kbd><i>Layer</i> ➜ <i>Geometry</i> ➜ <i>Add</i></kbd>).
 </details>
 
 > [!CAUTION]
-> **For Affinity Designer users:**
-> Select the logo vector (and its parts) and change "fill mode" from *"Winding (Non-Zero)"* **into** *"Alternative (Even-Odd)"* (*menu:* <kbd><i>Layer</i> ➜ <i>Fill Mode</i></kbd>). Otherwise, undesired CSS rules are created for the SVGs (the vector path should contain everything without CSS trickery).
+> **Important step for Affinity by Canva / Affinity Designer:**
+> Select the logo vector (and its parts) and change "fill mode" from *"Winding (Non-Zero)"* **into** *"Alternative (Even-Odd)"* (*menu:* <kbd><i>Layer</i> ➜ <i>Fill Mode</i></kbd>). Otherwise, undesired CSS rules are created and needed for the SVGs (the vector path should contain everything without CSS trickery).
 
 <details>
 <summary>
