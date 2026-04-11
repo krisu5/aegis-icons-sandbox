@@ -322,7 +322,9 @@ Always use `svg_template.svg` as base for the icon.
 ### Variation icons
 
 > [!NOTE]
-> `var` is abbreviation of *variation*.
+> - `bg` is abbreviation of _background_.
+> - `fg` is abbreviation of _foreground_ (a.k.a. the logo).
+> - `var` is abbreviation of _variation_.
 
 - `bg.var` icons are for dark / AMOLED themes. These are made when **primary icon has dark background that blends in when using the darker theme.**
   - **Examples:** [primary Steam icon](https://user-images.githubusercontent.com/3540275/85153557-042e4580-b25f-11ea-85ff-7cb883f977d4.png), [Steam `bg.var` icon](https://user-images.githubusercontent.com/3540275/85153530-fbd60a80-b25e-11ea-9197-d7400eeec74f.png).
