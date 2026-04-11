@@ -51,7 +51,7 @@ Before making or requesting an icon for an app / site, refer to the "acceptabili
   - _Examples (not limited to):_ black hat hacking, malware, malvertising, money laundering, scams, illegal or highly controversal sexual material / services, harassment / cyberbullying.
 - Shady apps / sites
   - _Examples (not limited to):_ really private sites with no info on the web, sites with poor reputation.
-- :paintbrush: **Only for icon submissions:** submitting unmodified SVGs / [raster images](https://simple.wikipedia.org/wiki/Raster_graphics) from the web.
+- :paintbrush: **Only for icon submissions:** submitting unmodified SVGs / [raster images](https://simple.wikipedia.org/wiki/Raster_graphics).
   - Icons must be designed manually for submissions.
 <br>
 
@@ -107,7 +107,7 @@ _These softwares aren't allowed either because:_
 
 ### Finding the source material
 
-**Go though these options in order!**
+:warning: **Go though these options in order!**
 
 ---
 
@@ -129,7 +129,7 @@ _These softwares aren't allowed either because:_
 - About
 - *Or anything that might be related*
   
-**C.** If you didn't find anything, do a [Google](https://www.google.com) search just in case:
+**C.** If you didn't find anything, do a [Google](https://www.google.com) search just to double-check:
 
 ```
 site:offical-address-for-app-or-site-here.com brand OR logo OR media OR press
@@ -202,15 +202,16 @@ Making a vectorised logo from scratch is also an option with the necessary skill
 
 ### Using template
 
-When making icons, download and use provided [templates](/_templates).
+> [!IMPORTANT]
+> Always use provided template as base for the icon.
 
-Always use `svg_template.svg` as base for the icon.
+When making icons, go to [templates](/_templates) directory and download / use `svg_template.svg`.
 <br><br>
 
 ### Layouting the icon
 
 > [!IMPORTANT]
-> Below are the absolute musts
+> Below are things that are absolutely necessary
 
 - Always use logomark[^1] if brand is using one.
 - If the logo only has text (known as logotype[^1]), use that instead.
@@ -421,7 +422,7 @@ Next, do SVG compression & cleanup.
 > [!CAUTION]
 > **Test the SVG on the web browser** that the svg still works after edits! (drag-and-drop SVG to tab bar or *"Open File..." shortcut:* <kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>O</kbd>).
 
-When everything is done and ready to go, [submit icons with either as pull request or issue](#repository-submitting-options).
+When everything is done and ready to go, **submit the icons to the repository with pull request.**
 <br><br>
 
 ### Submitting to the repository
@@ -431,10 +432,11 @@ Fork this project and submit via pull request *(a.k.a. PR)*.
 > [!TIP]
 > [GitHub Desktop](https://desktop.github.com/) is the recommended software for this process, _especially if you're newcomer._
 
-- First, **fork the project** ([how to fork the project in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#forking-a-repository)).
-- _Sidenote:_ **creating changes in new branch(es)** instead of using `master` branch is **highly recommended**.
-  - This approach allows for submitting multiple PRs with ease without aegis-icons's own `master` branch updates interfering.
-  - [Creating branches in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#creating-a-branch) (remember to also [publish that branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#publishing-a-branch) after creating one).
+- First, **fork the project**.
+  - [How to fork the project in GitHub Desktop](https://docs.github.com/en/desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#forking-a-repository).
+- Then, **create new branch** for the icon(s).
+  - Create a new branch per PR; don't use same branch for different brand icons or multiple PRs.
+  - [Creating branches in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#creating-a-branch), remember to [publish that branch](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#publishing-a-branch) after creating one.
 - When icon is finished, fixed, tweaked or have any new changes, **create new commit** ([creating new commits in GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/committing-and-reviewing-changes-to-your-project#write-a-commit-message-and-push-your-changes)).
   - When writing a commit message for an icon addition or fix, please reference the corresponding issue number (e.g., `#123 New icon: whatever` or `#321 Fix icon: coolbrand`). This ensures the corresponding issue is automatically closed with a helpful comment and a direct link to the new or updated icon.
 - When ready to submit to aegis-icons, **[create a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).**
@@ -466,12 +468,12 @@ Generic icons ➜
 > 2. **Filename character limitations:** Only use [ISO basic Latin alphabet letters](https://en.wikipedia.org/wiki/ISO_basic_Latin_alphabet), numbers, spaces, dashes and other safe ASCII characters ([check the "forbidden printable ASCII characters"](https://stackoverflow.com/questions/1976007/what-characters-are-forbidden-in-windows-and-linux-directory-names/31976060#31976060) for characters that aren't allowed).
 
 - **Primary icons:**
-  - `[Company / product / app / site name].<ext>`
+  - `[Company / product / app / site name].svg`
   - *Examples:* `Adobe.svg`, `Best Buy.svg`, `FACEIT.svg`, `itch.io.svg`
   
 - **Icon variations with different background colour _OR_ black logo:**
-  - `[Primary icon name] bg.var.<ext>` (if with different background)
-  - `[Primary icon name] fg.var.<ext>` (if with black logo)
+  - `[Primary icon name] bg.var.avg` (if with different background)
+  - `[Primary icon name] fg.var.svg` (if with black logo)
   - *Examples:* `Squarespace bg.var.svg`, `Snapchat fg.var.svg`
   
 - **Generic icons:** 
@@ -486,17 +488,17 @@ Generic icons ➜
 </summary>
 
 > - **Icon variations with black foreground _PLUS_ different background colour:**
->   - `[Primary icon name] fg.bg.var.<ext>`
+>   - `[Primary icon name] fg.bg.var.svg`
 >   - *Example:* `Lichess fg.bg.var.svg`
 > 
 > - **Icon variations with alternate logo:**
->   - `[Primary icon name] alt.<ext>`
+>   - `[Primary icon name] alt.svg`
 >   - *Example:* `IVPN alt.svg`
 >
 > - **Alternative icons with different background colour _OR/AND_ black logo:**
->   - `[Primary icon name] alt bg.var.<ext>` (if with different background)
->   - `[Primary icon name] alt fg.var.<ext>` (if with black logo)
->   - `[Primary icon name] alt fg.bg.var.<ext>` (if with different background _PLUS_ black logo)
+>   - `[Primary icon name] alt bg.var.svg` (if with different background)
+>   - `[Primary icon name] alt fg.var.svg` (if with black logo)
+>   - `[Primary icon name] alt fg.bg.var.svg` (if with different background _PLUS_ black logo)
 >   - *Example:* `Discourse alt bg.var.svg`
 </details>
 <br>
@@ -543,41 +545,50 @@ More resources listed at [Logo Search's "Alternative Logo Sources"](https://logo
 
 ---
 
-#### _Google tips for searching logos_
+#### _Google search queries for searching logo vectors_
 
-- `logo site:offical-site-for-app-or-site.com`
-- `filetype:pdf site:offical-site-for-app-or-site.com` (vectors can be extracted from PDFs, as logos in these PDFs are often vector-based).
-- `"app-or-site-name-here" svg` or `"app-or-site-name-here" vector`.
-<br>
+```
+site:offical-site-for-app-or-site.com logo
+```
+
+```
+replace-this-with-app-or-site-name SVG OR vector
+```
+
+```
+site:offical-site-for-app-or-site.com filetype:pdf
+```
+<sup>Vectors can be extracted from PDFs with most vector graphics editors, as the logos in PDFs are often vector-based.</sup>
+<br><br>
 
 ### Image tracing tools
 
-> [!CAUTION]
-> Only use image tracing tool if there's no other option, **always use ready-made vectors if available.**
+In a nutshell, image tracing means converting raster image (PNG, JPG etc.) to vector file (SVG, EPS, AI etc.) or into vector paths, [more info at Wikipedia](https://en.wikipedia.org/wiki/Image_tracing).
 
-In a nutshell, image tracing means converting raster image (PNG, JPG etc.) to vector file (SVG, EPS, AI etc.) with vector paths, [more info at Wikipedia](https://en.wikipedia.org/wiki/Image_tracing).
-
-:balance_scale: **Rule of thumb with image tracing:**
+:balance_scale: **Things to check before image tracing:**
 1. Use high resolution image if possible.
-2. Preferably with image that doesn't have many colours.
-3. Doesn't have any [compression artifacts](https://simple.wikipedia.org/wiki/Compression_artifact).
-   - If image does have artifacts, try [Pix Fix](https://pixfix.com) tool to remove them.
+2. Preferably with image that doesn't have many colours (one color image is ideal).
+3. Doesn't have any or minimal amount of [compression artifacts](https://simple.wikipedia.org/wiki/Compression_artifact), zoom into image and check.
+   - If image does have artifacts, try [Pix Fix](https://pixfix.com) tool to fix the image.
 
-> [!WARNING]
-> Using tool **outside of these recommendations below** can do mediocre job and **is not acceptable.** \
-> Maintainer has tested many image tracing tools and these are only actually good ones so far (yes, even Illustrator is mediocre).
+> [!CAUTION]
+> - Only use image tracing tool if there's no other option, **always use ready-made vectors if available.**
+> - Using tool **outside of these recommendations below** can do mediocre job and **is not acceptable.**
+>   - Maintainer @krisu5 has tested many image tracing tools and these are good ones so far _(yes, even Illustrator is mediocre)_.
 
-- [Vectorizer.io](https://href.li/?https://www.vectorizer.io) :star: <!-- href.li (referrer hider) is added on purpose, preventing devs finding out the loophole -->
-  - Not as good as Vector Magic or Vectorizer.AI but **generating vectors without account / freely is possible.**
-  - **Loophole to download the SVG freely:** use [SVG Gobbler](https://www.svggobbler.com) after vector is generated.
-    - *Alternatively:* Inspect the output image (<kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>), copy the SVG code from dev tools and use plain text editor to create & save as SVG file.
-- [Vector Magic](https://vectormagic.com) :star:
-  - The one of best – if not the best – image tracer, often used by the maintainer @krisu5. Unfortunately **commercial software**, trial only allows previews.
-  - If you submitted icon PR and used other tools with not great success, then @krisu5 can – sometimes – image trace logo with this for you **if the request is legitimate.** Just submit the icon first and we'll go over it together.
-- [Vectorizer.AI](https://vectorizer.ai) :star:
-  - From makers of Vector Magic. Unfortunately also **commercial**.
+_Free image tracers:_
+- [Vectorizer.io](https://adguardteam.github.io/AnonymousRedirect/redirect.html?url=https://www.vectorizer.io) :star: <!-- The redirect to https://adguardteam.github.io/AnonymousRedirect/ (anonymous redirect / referrer) is added on purpose, preventing devs finding out the loophole -->
+  - Not as good as Vector Magic or Vectorizer.AI and technically commercial (downloading cost money), but nearly on par. **You can generate vectors for free and without an account though**.
+  - *Loophole to download the SVG freely:* use [SVG Gobbler](https://www.svggobbler.com) after vector is generated (for non-extension method, read ["Embedded logo(s) on the company website" section's](#2-embedded-logos-on-the-company-website) "Ways without extension" subsection).
 - [Vectorizer(.com)](https://vectorizer.com)
-  - Compared to others, it's the weakest tool of all of these. But best part is that it's **completely free to use** and still better then most other tools out there.
+  - Compared to others on this list and below, it's the least accurate tracer. But best part is that it's **completely free to use** and still better then most other tools out there.
+
+_Commercial image tracers:_
+- [Vector Magic](https://vectormagic.com) :star:
+  - The one of best – if not the best – image tracer, often used by the maintainer @krisu5. Trial only allows previews without export.
+  - If you submitted icon PR and used other image tracers with not great success, then @krisu5 can – sometimes – image trace logo with this for you **if the request is legitimate.** Just submit the icon first and we'll discuss about it.
+- [Vectorizer.AI](https://vectorizer.ai) :star:
+  - From makers of Vector Magic. Equally or slightly better then Vector Magic.
 <br>
 
 ### Lists of sites supporting 2FA
