@@ -65,7 +65,10 @@ Lists of softwares that are suitable for making vectors (and opposite).
 
 #### _Allowed_
 
-:heavy_check_mark: Most used and approved software, maintainers can possibly give you help with these:
+> [!NOTE]
+> If the software isn't listed in this "allowed" section, then **check the software's website:** if the software mentions being a _"vector graphics editor"_ and **not** a _"photo/image editor"_, then the software is most likely acceptable as long as vectors can be saved as SVG. **But maintainers can't help with your vector creation problems.**
+
+:heavy_check_mark: Most recommended software, maintainers can possibly give you help with these:
 
 - [Adobe Illustrator](https://adobe.com/products/illustrator) (industry standard, commercial)
 - [Affinity by Canva](https://affinity.studio/) (professional freeware creative suite, **remember to select [vector view mode](https://www.affinity.studio/help/design-aids-view-modes/#how-to-display-specific-modes)**)
@@ -73,16 +76,12 @@ Lists of softwares that are suitable for making vectors (and opposite).
 - [Graphite](https://graphite.art/) (new, but great open source vector graphics editor)
 - [Inkscape](https://inkscape.org) (popular open source vector graphics editor)
 
-:grey_question: Common software that's allowed, but maintainers can't help with these:
+:grey_question: _Somewhat_ common software that's allowed, but maintainers can't possibly help with these because of lack of experience:
 
 - [Figma](https://figma.com) (more known as interface design tool, but has good vector functions for making icons as well, use it only if you know how to use it for vector creation purpose)
 - [Penpot](https://penpot.app/) (same as Figma, but open source)
 - CorelDRAW [Standard](https://www.coreldraw.com/en/product/coreldraw/standard/) or [Creative Suite](https://www.coreldraw.com/en/product/coreldraw/) (old school professional software, commercial)
 - [Linearity Curve](https://www.linearity.io/curve/) (macOS only vector graphics editor, commercial)
-
-> [!NOTE]
-> If the software isn't listed here or in the prohibited section, **check the software's website:**
-> - **If the software mentions** being a _"vector graphics editor"_ (and **not** a _"photo/image editor"_), then the software is most likely acceptable as long as vectors can be saved as SVG. **But maintainers can't help with your vector creation problems.**
 
 ---
 
@@ -99,17 +98,16 @@ Lists of softwares that are suitable for making vectors (and opposite).
 - Paint.NET
 - [(And more...)](https://en.wikipedia.org/wiki/Comparison_of_raster_graphics_editors#List)
 
-These softwares are either:
+_These softwares aren't allowed either because:_
 
-1. For photo / raster image editing (and not designed for vector creating).
-2. Too basic for proper vector creation.
+1. It's made for photo / raster image editing only and not designed for vector editing / creation.
+2. It's too basic for proper vector editing / creation.
    - E.g. can't combine logos into one singular path, can't create SVGs without huge amount of bloat.
 <br>
 
 ### Finding the source material
 
-> [!IMPORTANT]
-> Go though these options **in order!**
+**Go though these options in order!**
 
 ---
 
@@ -442,15 +440,17 @@ When everything is done and ready to go, [submit icons with either as pull reque
 
 ### Directories
 
-- Primary icons ➜
-  - `/icons/1_Primary/` folder.
+Primary icons ➜
+- `/icons/1_Primary/` folder.
   - _Means all the logo based icons that aren't variations / alternatives._
-- Variation and alternative icons ➜
-  - `/icons/2_Variations/` folder.
-  - _[What's the variation icon?](#variation-icons)_
+  
+Variation and alternative icons ➜
+- `/icons/2_Variations/` folder.
+  - _[What's the variation icon?](#variation-icons)_<br>
   - _[What's the alternative icon?](#alternative-icons)_
-- Generic icons ➜
-  - `/icons/3_Generic/` folder.
+
+Generic icons ➜
+- `/icons/3_Generic/` folder.
   - _[What's the generic icon?](#generic-icons)_
 <br>
 
@@ -562,16 +562,17 @@ In a nutshell, image tracing means converting raster image (PNG, JPG etc.) to ve
 > Using tool **outside of these recommendations below** can do mediocre job and **is not acceptable.** \
 > Maintainer has tested many image tracing tools and these are only actually good ones so far (yes, even Illustrator is mediocre).
 
-- [Vector Magic](https://vectormagic.com) :star:
-  - The one of best – if not the best – image tracer, often used by the maintainer. Unfortunately **commercial software**, trial only allows previews.
-- [Vectorizer.AI](https://vectorizer.ai) :star:
-  - From makers of Vector Magic. Unfortunately also **commercial**, almost as good results as Vector Magic.
 - [Vectorizer.io](https://href.li/?https://www.vectorizer.io) :star: <!-- href.li (referrer hider) is added on purpose, preventing devs finding out the loophole -->
-  - Not as good as previous two but still great image tracer. **Generating vectors without account / freely is possible.**
-    - **There's a loophole to download the SVG:** use [SVG Gobbler](https://www.svggobbler.com) after vector is generated.
+  - Not as good as Vector Magic or Vectorizer.AI but **generating vectors without account / freely is possible.**
+    - **Loophole to download the SVG freely:** use [SVG Gobbler](https://www.svggobbler.com) after vector is generated.
       - *Alternatively:* Inspect the output image (<kbd>Ctrl [⌘ Cmd]</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>), copy the SVG code from dev tools and use plain text editor to create & save as SVG file.
+- [Vector Magic](https://vectormagic.com) :star:
+  - The one of best – if not the best – image tracer, often used by the maintainer @krisu5. Unfortunately **commercial software**, trial only allows previews.
+  - If you submitted icon PR and used other tools with not great results, @krisu5 can – in some cases – generate logo vector from raster for you if the request is legitimate. Just submit the icon first and we'll go over it together.
+- [Vectorizer.AI](https://vectorizer.ai) :star:
+  - From makers of Vector Magic. Unfortunately also **commercial**.
 - [Vectorizer(.com)](https://vectorizer.com)
-  - Out of these four options, this one is worst one of the bunch. But best part is that it's **completely free to use** and still better then most other tools out there.
+  - Compared to others, it's the weakest tool of all of these. But best part is that it's **completely free to use** and still better then most other tools out there.
 <br>
 
 ### Lists of sites supporting 2FA
