@@ -115,15 +115,16 @@ _These softwares aren't allowed either because:_
 
 1. It's made for photo / raster image editing only and not designed for vector editing / creation.
 2. It's too basic for proper vector editing / creation.
-   - E.g. can't combine logos into one singular path, can't create SVGs without huge amount of bloat.
+   - E.g. can't combine logos into single path, can't create SVGs without huge amount of bloat.
 
 <!-- SECTION BREAK --> <br> <!-- SECTION BREAK --> 
 
 ### Finding the source material
 
-:warning: **Go though these options in order!**
+> [!IMPORTANT]
+> **Go though these options in order!**
 
-<!-- SECTION BREAK --> <br> <!-- SECTION BREAK --> 
+<!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 #### _1. Brand assets (logos) & guidelines on the company website_
 
@@ -265,7 +266,7 @@ _Documentation coming soon... (krisu5 will add basic documentation for a start).
 ### Combine logo vector into single path
 
 > [!IMPORTANT]
-> Logo has to **always** be in **one singular** path / object!
+> Logo has to **always** be in **single** path / object!
 
 <details>
 <summary>
