@@ -296,7 +296,7 @@ _Documentation coming soon... (krisu5 will add basic documentation for a start).
 > 4. Unselect everything (click outside of canvas with "Move" tool).
 > 5. Repeat step 2.
 >    - :information_source: **Before moving to step 6,** read "Important step for Affinity by Canva / Affinity Designer" note below and do the requested extra steps.
-> 6. Combine logo (_menu:_ <kbd><i>Layer</i></kbd> ➜ <kbd><i>Geometry</i><kbd> ➜ <kbd><i>Add</i></kbd>).
+> 6. Combine logo (_menu:_ <kbd><i>Layer</i></kbd> ➜ <kbd><i>Geometry</i></kbd> ➜ <kbd><i>Add</i></kbd>).
 </details>
 
 > [!CAUTION]
