@@ -23,7 +23,8 @@ body:
     id: site_app-url
     attributes:
       label: URL for the brand / site / app
-      description: <br>
+      description: |
+      kkk
       placeholder: Eg. https://example.com
     validations:
       required: true  
@@ -35,7 +36,7 @@ body:
         
         - :globe_with_meridians: Please link to english version of the site, if site has that option!
         - :underage: If this entity is explicitly ["not safe for work"](https://en.wikipedia.org/wiki/Not_safe_for_work), please add ` (NSFW)` after the URL.
-        - :warning: **Don't add Play Store link or other app store links**, unless requested entity doesn't have any other website.
+        - :warning: **Don't add Play Store links or other app store links**, unless requested entity doesn't have any other website.
         
         ---      
   - type: input
@@ -96,7 +97,7 @@ body:
           required: true
         - label: I did not change the formatting of the issue title *([top text field](#))*.
           required: true
-        - label: *If I added a proof of the Aegis-compatible 2FA,* I checked that [documentation link or screenshot is acceptable](#important-about-proof)
+        - label: _If I added a proof of the Aegis-compatible 2FA,_ I checked that [documentation link or screenshot is acceptable](#important-about-proof)
           required: true
         - label: I did not read anything what this issue form said.
           required: false
