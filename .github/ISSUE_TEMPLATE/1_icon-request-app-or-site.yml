@@ -70,7 +70,8 @@ body:
           - :x: **NO screenshots from Aegis app, period!** Only from the service you have the account on.
           - *Censor sensitive info if needed (QR codes, 2FA seed codes, personal information etc.)*
           
-        > [!IMPORTANT] 
+        > [!IMPORTANT]
+        <a name="important-about-proof"></a> 
         Documentation link or screenshot should **CLEARLY MENTION** that 2FA/MFA has (T)OTP / HOTP or any mobile 2FA app option that supports (T)OTP (eg. Google Authenticator, Microsoft Authenticator, LastPass Authenticator etc.) or show the section of the 2FA/MFA setup page with *(censored)* OTP MFA/2FA QR code image. **Otherwise we cannot be sure if 2FA/MFA actually is compatible for Aegis.**
         
         *This is optional, but **if we cannot find info about 2FA/MFA from the website, Google nor [2FA Directory](https://2fa.directory/int/)**, then we might **reject the request** (we give you possibility for reopening though by sending the proof via comment). If proof is lacking, we give you 30 days to response before closing the issue.*
@@ -88,3 +89,13 @@ body:
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
+        - label: I added the name of the brand / site / app to the issue title *(top text field)*.
+          required: true
+        - label: I used proper capitalization / spelling for the brand / site / app on the issue title *(top text field)*.
+          required: true
+        - label: I did not change the formatting of the issue title *(top text field)*.
+          required: true
+        - label: If I added a proof of the Aegis-compatible 2FA, I checked that [documentation link or screenshot is acceptable](#important-about-proof).
+          required: true
+        - label: I did not read anything what the issue form said.
+          required: false
