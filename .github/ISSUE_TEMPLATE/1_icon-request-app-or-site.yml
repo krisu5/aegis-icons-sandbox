@@ -12,7 +12,7 @@ body:
         > - :angry: **If you don't read / follow the issue guidelines**, your issue(s) might **get rejected** and, *in the worse case*, **get you banned indefinitely.**
         > - :bangbang: Do not request multiple icons in single issue, make multiple issues instead.
         >
-        > ### :triangular_flag_on_post: Issue title formatting *(top text field)*
+        > ### :triangular_flag_on_post: Issue title formatting *(text field at the top)*
         > - Remember to **add name of the brand / site / app** at the end of *"Icon request:"* text.
         >   - Eg. `Icon request: GitHub`
         > - Please use proper capitalization / spelling for the name
@@ -115,11 +115,11 @@ body:
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
-        - label: I added the name of the brand / site / app to the issue title *([top text field](#))*.
+        - label: I added the name of the brand / site / app to the issue title *(text field at the top)*.
           required: true
-        - label: I used proper capitalization / spelling for the brand / site / app on the issue title *([top text field](#))*.
+        - label: I used proper capitalization / spelling for the brand / site / app on the issue title *(text field at the top)*.
           required: true
-        - label: I did not change the formatting of the issue title *([top text field](#))*.
+        - label: I did not change the formatting of the issue title *(text field at the top)*.
           required: true
         - label: _If I added a proof of the Aegis-compatible 2FA,_ I checked that [documentation link or screenshot is acceptable](#important-about-proof)
           required: true

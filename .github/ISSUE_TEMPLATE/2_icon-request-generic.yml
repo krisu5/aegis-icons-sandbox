@@ -6,25 +6,33 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### :loudspeaker: [Read our issue guidelines first](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) if you haven't already!
-        :angry: **If you don't read / follow the issue guidelines**, your issue(s) might **get rejected** and, *in the worse case*, **get you banned.**
-        *(Issue guidelines was last updated on: **2022-08-18**).*
+        > [!IMPORTANT]
+        > ### :loudspeaker: [Read our issue guidelines first](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) if you haven't already! *Always recheck them for any guideline updates.*
+        > 
+        > - :angry: **If you don't read / follow the issue guidelines**, your issue(s) might **get rejected** and, *in the worse case*, **get you banned indefinitely.**
+        > - :bangbang: Do not request multiple icons in single issue, make multiple issues instead.
+        >
+        > ### :triangular_flag_on_post: Issue title formatting *(text field at the top)*
+        > - Remember to **add symbol name** at the end of *"Generic icon request:"* text.
+        >   - Eg. `Generic icon request: Education`
+        > - Do not change the formatting of the title!
+        >
+        > If you can't think of **symbol name**, use this site as reference: https://phosphoricons.com/
         
-        *And do not request multiple icons in single issue, make multiple issues instead.*
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
         
-        ### :triangular_flag_on_post: Issue title formatting *(top text field)*
-        - Remember to **add symbol name** at the end of *"Generic icon request:"* text.
-          - Eg. `Generic icon request: Education`
-        - Do not change the formatting of the title!
         
-        If you can't think of **symbol name**, use this site as reference: https://phosphoricons.com/
-        
-        ---
   - type: textarea
     id: anything-else
     attributes:
       label: Anything else?
       description: Optional text field to add other info, kudos etc.
+  - type: markdown
+    attributes:
+      value: |
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
+        
+        
   - type: checkboxes
     id: terms
     attributes:
@@ -32,3 +40,7 @@ body:
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
+        - label: I did not change the formatting of the issue title *(text field at the top)*.
+          required: true
+        - label: I did not read anything what this issue form said.
+          required: false
