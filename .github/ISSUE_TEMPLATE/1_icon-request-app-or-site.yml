@@ -29,8 +29,8 @@ body:
   - type: markdown
     attributes:
       value: |
-        Remember to add *https://* (or *http://*) to start of the URL.
-        Link should be the homepage of the site (not login page or any other miscellaneous page).
+        1. **Remember to add *https://* (or *http://*) to start of the URL.**
+        2. Link should be the homepage of the site (not login page or any other miscellaneous page).
         
         - :globe_with_meridians: Please link to english version of the site, if site has that option!
         - :underage: If this entity is explicitly ["not safe for work"](https://en.wikipedia.org/wiki/Not_safe_for_work), please add ` (NSFW)` after the URL.
