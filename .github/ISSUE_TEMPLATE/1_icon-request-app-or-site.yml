@@ -89,11 +89,11 @@ body:
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
-        - label: I added the name of the brand / site / app to the issue title *(top text field)*.
+        - label: I added the name of the brand / site / app to the issue title *([top text field](#))*.
           required: true
-        - label: I used proper capitalization / spelling for the brand / site / app on the issue title *(top text field)*.
+        - label: I used proper capitalization / spelling for the brand / site / app on the issue title *([top text field](#))*.
           required: true
-        - label: I did not change the formatting of the issue title *(top text field)*.
+        - label: I did not change the formatting of the issue title *([top text field](#))*.
           required: true
         - label: If I added a proof of the Aegis-compatible 2FA, I checked that [documentation link or screenshot is acceptable](#important-about-proof).
           required: true
