@@ -18,7 +18,7 @@ body:
         > - Please use proper capitalization / spelling for the name (check the capitalization / spelling from browser tab title or body text of their website, **not from the logo!**).
         > - **Do not change the formatting of the title!**
         
-        ---
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
   - type: input
@@ -38,7 +38,7 @@ body:
         - :underage: If this entity is explicitly ["not safe for work"](https://en.wikipedia.org/wiki/Not_safe_for_work), please add ` (NSFW)` after the URL.
         - :warning: **Don't add Play Store links or other app store links**, unless requested entity doesn't have any other website.
         
-        ---
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
   - type: input
@@ -47,19 +47,19 @@ body:
       label: Logo resources for the icon
       placeholder: Eg. https://example.com/press-kit OR https://example.com/logo.svg
       description: |
-        Optional. *Adding resource doesn't guarantee that aegis-icons will use it for the icon.*
+        Optional. Add URL for **press kit** or *logo SVG / EPS / AI vector resource*, preferably from official source ([instructions for finding these](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#finding-the-source-material)).
   - type: markdown
     attributes:
       value: |
-        **Optional field** to add URL for **press kit** or *logo SVG / EPS / AI vector resource*, preferably from official source ([instructions for finding these](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#finding-the-source-material)).
-        
         - :x: **Unaccepted resources:** JPG, PNG, GIF, WebP, AVIF, ICO or [any other raster image](https://en.wikipedia.org/wiki/Image_file_format#Raster_formats_(2D)).
           - *[Why vector images instead of raster (a.k.a. bitmap) images](https://www.lifewire.com/vector-and-bitmap-images-1701238#toc-ease-of-use-vectors-are-more-robust)*.
         - :x: **NO [data URIs](https://en.wikipedia.org/wiki/Data_URI_scheme), SVG code** or anything **that's NOT web URL!** *(Forbidden because of long character lengths.)*
           - Data uri starts with: `data:image/` (and so forth).
           - SVG code starts with: `<svg` (and so forth).
+          
+        *Adding resource doesn't guarantee that aegis-icons will use it for the icon.*
         
-        ---
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
   - type: textarea
@@ -84,7 +84,7 @@ body:
         
         *This is optional, but **if we cannot find info about 2FA/MFA from the website, Google nor [2FA Directory](https://2fa.directory/int/)**, then we might **reject the request** (we give you possibility for reopening though by sending the proof via comment). If proof is lacking, we give you 30 days to response before closing the issue.*
         
-        ---
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
   - type: textarea
@@ -93,7 +93,10 @@ body:
       label: Anything else?
       description: |
         Optional text field to add other info: extra info about branding, kudos etc.
-
+  - type: markdown
+    attributes:
+      value: |
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
   - type: checkboxes
     id: terms
