@@ -15,7 +15,7 @@ body:
         > ### :triangular_flag_on_post: Issue title formatting *(text field at the top)*
         > - Remember to **add name of the brand / site / app** at the end of *"Update icon:"* text.
         >   - Eg. `Update icon: GitHub`
-        >   - If brand changed their name, format it like this: `Update icon: <NEW-BRAND-NAME> (f.k.a. <OLD-BRAND-NAME>)`
+        >   - If brand changed their name, format it like this: `Update icon: NEW-BRAND-NAME (f.k.a. OLD-BRAND-NAME)`
         > - Please use proper capitalization / spelling for the name
         >   - Check the capitalization / spelling from browser tab title or body text of their website, **not from the logo!**
         > - **Do not change the formatting of the title!**
