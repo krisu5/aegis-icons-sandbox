@@ -20,7 +20,7 @@ body:
       label: Issue
     validations:
       required: true
-    - type: markdown
+  - type: markdown
     attributes:
       value: |
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
