@@ -81,8 +81,8 @@ body:
         <a name="important-about-proof"></a>   
         > [!IMPORTANT]
         > Provide documentation or a screenshot for 2FA/MFA that **CLEARLY STATES** that it either supports:
-        > 1. (T)OTP/HOTP
-        > 2. A mobile authenticator apps (for example: Google Authenticator, Microsoft Authenticator, LastPass Authenticator).
+        > 1. (T)OTP/HOTP protocol.
+        > 2. Authenticator apps (for example: Google Authenticator, Microsoft Authenticator, LastPass Authenticator).
         >
         > Alternatively, include a screenshot of the 2FA/MFA setup page that displays the (T)OTP QR code *(remember to censor sensitive information)*.
         >
