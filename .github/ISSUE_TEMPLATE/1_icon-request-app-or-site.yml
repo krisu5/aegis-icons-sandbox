@@ -81,15 +81,15 @@ body:
         
         <a name="important-about-proof"></a>   
         > [!IMPORTANT]
-        > Provide documentation or a screenshot for 2FA/MFA that **CLEARLY STATES** that it either supports:
-        > 1. (T)OTP/HOTP protocol.
+        > Documentation link or a screenshot for 2FA/MFA settings page (or login prompt) you provided **MUST CLEARLY STATE** that it either supports:
+        > 1. (T)OTP/HOTP protocols.
         > 2. Authenticator apps (for example: Google Authenticator, Microsoft Authenticator, LastPass Authenticator).
         >
         > Alternatively, include a screenshot of the 2FA/MFA setup page that displays the (T)OTP QR code *(remember to censor sensitive information)*.
         >
         > **Otherwise we cannot be sure if 2FA/MFA is actually compatible with Aegis.**
         
-        *The "proof of the Aegis-compatible 2FA" field is optional, but **if we cannot find info about 2FA/MFA from the website, Google nor [2FA Directory](https://2fa.directory/int/)**, then we might **reject the request** (we give you possibility for reopening though by sending the proof via comment). If the proof is lacking, we give you 30 days to response before closing the issue.*
+        *The "proof of the Aegis-compatible 2FA" field is optional, but **if we cannot find info about 2FA/MFA from the official website, Google nor [2FA Directory](https://2fa.directory/int/)**, then we might **reject the request** (we give you possibility for reopening though by sending the proof via comment). If the proof is lacking, we give you 30 days to response before closing the issue.*
         
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
