@@ -6,8 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
+        <a name="top"></a>
         > [!IMPORTANT]
-        > ### :loudspeaker: <a href="https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines" target="_blank">Read our issue guidelines first</a> if you haven't already! *Always recheck them for any guideline updates.*
+        > ### :loudspeaker: [Read our issue guidelines first](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) if you haven't already! *Always recheck them for any guideline updates.*
         > 
         > - :angry: **If you don't read / follow the issue guidelines**, your issue(s) might **get rejected** and, *in the worse case*, **get you banned indefinitely.**
         > - :bangbang: Do not request multiple icons in single issue, make multiple issues instead.
@@ -115,11 +116,11 @@ body:
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
-        - label: I added the name of the brand / site / app to the issue title *([top text field](#))*.
+        - label: I added the name of the brand / site / app to the issue title *([top text field](#top))*.
           required: true
-        - label: I used proper capitalization / spelling for the brand / site / app on the issue title *([top text field](#))*.
+        - label: I used proper capitalization / spelling for the brand / site / app on the issue title *([top text field](#top))*.
           required: true
-        - label: I did not change the formatting of the issue title *([top text field](#))*.
+        - label: I did not change the formatting of the issue title *([top text field](#top))*.
           required: true
         - label: _If I added a proof of the Aegis-compatible 2FA,_ I checked that [documentation link or screenshot is acceptable](#important-about-proof)
           required: true
