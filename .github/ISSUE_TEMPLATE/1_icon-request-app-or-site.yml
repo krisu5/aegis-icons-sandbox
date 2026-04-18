@@ -18,31 +18,36 @@ body:
         > - Please use proper capitalization / spelling for the name (check the capitalization / spelling from browser tab title or body text of their website, **not from the logo!**).
         > - **Do not change the formatting of the title!**
         
-        ---      
+        ---
+
+
   - type: input
     id: site_app-url
     attributes:
       label: URL for the brand / site / app
-      description: 
+      description: |
+        1. **Remember to add *https://* (or *http://*) to start of the URL.**
+        2. Link should be the homepage of the site (not login page or any other miscellaneous page).
       placeholder: Eg. https://example.com
     validations:
       required: true  
   - type: markdown
     attributes:
       value: |
-        1. **Remember to add *https://* (or *http://*) to start of the URL.**
-        2. Link should be the homepage of the site (not login page or any other miscellaneous page).
-        
         - :globe_with_meridians: Please link to english version of the site, if site has that option!
         - :underage: If this entity is explicitly ["not safe for work"](https://en.wikipedia.org/wiki/Not_safe_for_work), please add ` (NSFW)` after the URL.
         - :warning: **Don't add Play Store links or other app store links**, unless requested entity doesn't have any other website.
         
-        ---      
+        ---
+
+
   - type: input
     id: logo-url
     attributes:
       label: Logo resources for the icon
       placeholder: Eg. https://example.com/press-kit OR https://example.com/logo.svg
+      description: |
+        Optional. *Adding resource doesn't guarantee that aegis-icons will use it for the icon.*
   - type: markdown
     attributes:
       value: |
@@ -54,13 +59,15 @@ body:
           - Data uri starts with: `data:image/` (and so forth).
           - SVG code starts with: `<svg` (and so forth).
         
-        *Adding a optional resource doesn't guarantee that aegis-icons will use it for the icon. We make that decision based of the current branding.*
-        
         ---
+
+
   - type: textarea
     id: 2fa-proof
     attributes:
       label: Proof of the Aegis-compatible 2FA
+      description: |
+        Optional, but recommended!
   - type: markdown
     attributes:
       value: |
@@ -78,15 +85,22 @@ body:
         *This is optional, but **if we cannot find info about 2FA/MFA from the website, Google nor [2FA Directory](https://2fa.directory/int/)**, then we might **reject the request** (we give you possibility for reopening though by sending the proof via comment). If proof is lacking, we give you 30 days to response before closing the issue.*
         
         ---
+
+
   - type: textarea
     id: anything-else
     attributes:
       label: Anything else?
-      description: "Optional text field to add other info: extra info about branding, kudos etc."   
+      description: |
+        Optional text field to add other info: extra info about branding, kudos etc.
+
+
   - type: checkboxes
     id: terms
     attributes:
-      label: Confirmation
+      label: Confirmations
+      description: |
+        **IMPORTANT:** Answer truthfully.
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
