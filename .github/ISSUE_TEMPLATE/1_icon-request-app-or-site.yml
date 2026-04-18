@@ -18,16 +18,15 @@ body:
         > - Please use proper capitalization / spelling for the name (check the capitalization / spelling from browser tab title or body text of their website, **not from the logo!**).
         > - **Do not change the formatting of the title!**
         
-        ---
-        
+        ---      
   - type: input
     id: site_app-url
     attributes:
       label: URL for the brand / site / app
+      description: <br>
       placeholder: Eg. https://example.com
     validations:
-      required: true
-      
+      required: true  
   - type: markdown
     attributes:
       value: |
@@ -38,14 +37,12 @@ body:
         - :underage: If this entity is explicitly ["not safe for work"](https://en.wikipedia.org/wiki/Not_safe_for_work), please add ` (NSFW)` after the URL.
         - :warning: **Don't add Play Store link or other app store links**, unless requested entity doesn't have any other website.
         
-        ---
-        
+        ---      
   - type: input
     id: logo-url
     attributes:
       label: Logo resources for the icon
       placeholder: Eg. https://example.com/press-kit OR https://example.com/logo.svg
-      
   - type: markdown
     attributes:
       value: |
@@ -64,7 +61,6 @@ body:
     id: 2fa-proof
     attributes:
       label: Proof of the Aegis-compatible 2FA
-      
   - type: markdown
     attributes:
       value: |
@@ -86,8 +82,7 @@ body:
     id: anything-else
     attributes:
       label: Anything else?
-      description: "Optional text field to add other info: extra info about branding, kudos etc."
-      
+      description: "Optional text field to add other info: extra info about branding, kudos etc."   
   - type: checkboxes
     id: terms
     attributes:
