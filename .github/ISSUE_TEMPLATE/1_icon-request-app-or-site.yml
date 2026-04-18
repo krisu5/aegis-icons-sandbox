@@ -19,6 +19,7 @@ body:
         > - **Do not change the formatting of the title!**
         
         ---
+        
   - type: input
     id: site_app-url
     attributes:
@@ -38,6 +39,7 @@ body:
         - :warning: **Don't add Play Store link or other app store links**, unless requested entity doesn't have any other website.
         
         ---
+        
   - type: input
     id: logo-url
     attributes:
@@ -99,7 +101,7 @@ body:
           required: true
         - label: I did not change the formatting of the issue title *([top text field](#))*.
           required: true
-        - label: *If I added a proof of the Aegis-compatible 2FA,* I checked that [documentation link or screenshot is acceptable](#important-about-proof).
+        - label: *If I added a proof of the Aegis-compatible 2FA,* I checked that [documentation link or screenshot is acceptable](#important-about-proof)
           required: true
         - label: I did not read anything what this issue form said.
           required: false
