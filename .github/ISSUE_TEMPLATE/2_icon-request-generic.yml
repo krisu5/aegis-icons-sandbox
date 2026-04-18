@@ -27,6 +27,12 @@ body:
     attributes:
       label: Anything else?
       description: Optional text field to add other info, kudos etc.
+  - type: markdown
+    attributes:
+      value: |
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
+        
+        
   - type: checkboxes
     id: terms
     attributes:
