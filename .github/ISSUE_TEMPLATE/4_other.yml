@@ -18,6 +18,7 @@ body:
     id: issue
     attributes:
       label: Issue
+      description: Explain in detail, so we understand the situation.
     validations:
       required: true
   - type: markdown
