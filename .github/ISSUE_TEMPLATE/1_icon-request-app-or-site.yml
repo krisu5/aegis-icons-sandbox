@@ -6,11 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### :loudspeaker: [Read our issue guidelines first](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) if you haven't already!
-        > [!WARNING]
-        > **If you don't read / follow the issue guidelines**, your issue(s) might **get rejected** and, *in the worse case*, **get you banned.**
-        
-        *And do not request multiple icons in single issue, make multiple issues instead.*
+        > [!IMPORTANT]
+        > ### :loudspeaker: [Read our issue guidelines first](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) if you haven't already!
+        > 
+        > - **If you don't read / follow the issue guidelines**, your issue(s) might **get rejected** and, *in the worse case*, **get you banned.**
+        > - Do not request multiple icons in single issue, make multiple issues instead.
         
         ### :triangular_flag_on_post: Issue title formatting *(top text field)*
         - Remember to **add name of the brand / site / app** at the end of *"Icon request:"* text.
