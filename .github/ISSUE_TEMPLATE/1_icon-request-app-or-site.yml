@@ -23,6 +23,7 @@ body:
     id: site_app-url
     attributes:
       label: URL for the brand / site / app
+      description: 
       placeholder: Eg. https://example.com
     validations:
       required: true  
