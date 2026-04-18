@@ -27,8 +27,8 @@ body:
     attributes:
       label: URL for the brand / site / app
       description: |
-        1. **Remember to add *https://* (or *http://*) to start of the URL.**
-        2. Link should be the homepage of the site (not login page or any other miscellaneous page).
+        1. **Remember to add *https://* (or *http://*)** to start of the URL.
+        2. **Link should be the homepage of the site** (not login page or any other miscellaneous page).
       placeholder: Eg. https://example.com
     validations:
       required: true  
