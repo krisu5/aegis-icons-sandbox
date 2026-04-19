@@ -42,7 +42,7 @@ body:
           required: true
         - label: I added the symbol name to the issue title *(text field at the top)*.
           required: true
-        - label: I I keep the formatting of the issue title *(text field at the top)*.
+        - label: I keep the formatting of the issue title *(text field at the top)*.
           required: true
         - label: I did not read anything what this issue form said.
           required: false
