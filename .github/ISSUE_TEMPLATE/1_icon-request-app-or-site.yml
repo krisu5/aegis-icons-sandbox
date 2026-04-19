@@ -123,9 +123,9 @@ body:
           required: true
         - label: I used proper capitalization / spelling for the brand / site / app on the issue title *(text field at the top)*.
           required: true
-        - label: I did not change the formatting of the issue title *(text field at the top)*.
+        - label: I keep the formatting of the issue title *(text field at the top)*.
           required: true
-        - label: I [meet the URL requirements](#url-requirements).
+        - label: The URL that I added meets [the requirements](#url-requirements).
           required: true
         - label: _If I added a proof of the Aegis-compatible 2FA,_ I checked that [documentation link or screenshot is acceptable](#important-about-proof)
           required: true
