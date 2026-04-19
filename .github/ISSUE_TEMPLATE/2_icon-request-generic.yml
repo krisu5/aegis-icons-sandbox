@@ -40,6 +40,8 @@ body:
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
+        - label: I added the symbol name to the issue title *(text field at the top)*.
+          required: true
         - label: I did not change the formatting of the issue title *(text field at the top)*.
           required: true
         - label: I did not read anything what this issue form said.

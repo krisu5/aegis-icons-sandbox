@@ -35,6 +35,7 @@ body:
   - type: markdown
     attributes:
       value: |
+        <a name="url-requirements"></a>
         - :globe_with_meridians: Please link to english version of the site, if site has that option!
         - :underage: If this entity is explicitly ["not safe for work"](https://en.wikipedia.org/wiki/Not_safe_for_work), please add ` (NSFW)` after the URL.
         - :warning: **Don't add Play Store links or other app store links**, unless requested entity doesn't have any other website.
@@ -120,6 +121,8 @@ body:
         - label: I used proper capitalization / spelling for the brand / site / app on the issue title *(text field at the top)*.
           required: true
         - label: I did not change the formatting of the issue title *(text field at the top)*.
+          required: true
+        - label: I [meet the URL requirements](#url-requirements).
           required: true
         - label: _If I added a proof of the Aegis-compatible 2FA,_ I checked that [documentation link or screenshot is acceptable](#important-about-proof)
           required: true
