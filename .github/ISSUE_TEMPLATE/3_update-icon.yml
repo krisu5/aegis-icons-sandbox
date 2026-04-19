@@ -79,7 +79,7 @@ body:
           - Please leave it empty if you **didn't find** vector resources. Raster resources aren't helpful.
           - *[Why vector images instead of raster (a.k.a. bitmap) images](https://www.lifewire.com/vector-and-bitmap-images-1701238#toc-ease-of-use-vectors-are-more-robust)*.
         - :x: **NO [data URIs](https://en.wikipedia.org/wiki/Data_URI_scheme), SVG code** or anything **that's NOT web URL!** *(Forbidden because of long character lengths.)*
-          - Data uri starts with: `data:image/` (and so forth).
+          - Data URI starts with: `data:image/` (and so forth).
           - SVG code starts with: `<svg` (and so forth).
           
         *Adding resource doesn't guarantee that aegis-icons will use it for the icon.*
