@@ -20,12 +20,12 @@ body:
         >   - Check the capitalization / spelling from browser tab title or body text of their website, **not from the logo!**
         > - **Do not change the formatting of the title!**
         
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
+        
 
   - type: markdown
     attributes:
       value: |
-        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
-      
         <a name="url-requirements"></a>
   - type: input
     id: site_app-url
