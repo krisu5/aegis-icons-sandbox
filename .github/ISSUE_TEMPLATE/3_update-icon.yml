@@ -20,9 +20,13 @@ body:
         >   - Check the capitalization / spelling from browser tab title or body text of their website, **not from the logo!**
         > - **Do not change the formatting of the title!**
         
-        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
-        
 
+  - type: markdown
+    attributes:
+      value: |
+        <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
+      
+        <a name="url-requirements"></a>
   - type: input
     id: site_app-url
     attributes:
@@ -36,7 +40,6 @@ body:
   - type: markdown
     attributes:
       value: |
-        <a name="url-requirements"></a>
         - :globe_with_meridians: Please link to english version of the site, if site has that option!
         - :underage: If this entity is explicitly ["not safe for work"](https://en.wikipedia.org/wiki/Not_safe_for_work), please add ` (NSFW)` after the URL.
         - :warning: **Don't add Play Store links or other app store links**, unless requested entity doesn't have any other website.
