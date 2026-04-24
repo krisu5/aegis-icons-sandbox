@@ -1,5 +1,5 @@
 name: Icon request (generic)
-description: Suggest a new *generic* icon (i.e. icon that doesn't represent any brand and uses symbols).
+description: Suggest a new "generic" icon (i.e. icon that doesn't represent any brand and uses symbols).
 title: "Generic icon request: "
 labels: ["New Icon", "Generic"]
 body:
@@ -20,29 +20,34 @@ body:
         > If you can't think of **symbol name**, use this site as reference: https://phosphoricons.com/
         
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
-        
-        
+
+
+
   - type: textarea
     id: anything-else
     attributes:
       label: Anything else?
       description: Optional text field to add other info, kudos etc.
+      
   - type: markdown
     attributes:
       value: |
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
-        
-        
+
+
+
   - type: checkboxes
     id: issue-checks
     attributes:
       label: Confirmations
+      description: |
+        **IMPORTANT:** Answer truthfully.
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
         - label: I added the symbol name to the issue title _(text field at the top)_.
           required: true
-        - label: I keep the formatting of the issue title _(text field at the top)_.
+        - label: I keep the formatting of the issue title intact _(text field at the top)_.
           required: true
         - label: I did not read anything what this issue form said.
           required: false

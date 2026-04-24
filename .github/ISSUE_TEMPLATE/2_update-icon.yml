@@ -23,6 +23,7 @@ body:
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
+
   - type: markdown
     attributes:
       value: <a name="url-requirements"></a>
@@ -36,7 +37,8 @@ body:
         2. **Link should be the homepage of the site** (not login page or any other miscellaneous page).
       placeholder: Eg. https://example.com
     validations:
-      required: true  
+      required: true
+
   - type: markdown
     attributes:
       value: |
@@ -45,6 +47,7 @@ body:
         - :warning: **Don't add Play Store links or other app store links**, unless requested entity doesn't have any other website.
         
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
+
 
 
   - type: dropdown
@@ -58,10 +61,12 @@ body:
         - Other
     validations:
       required: true
+
   - type: markdown
     attributes:
       value: |
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
+
 
 
   - type: input
@@ -71,6 +76,7 @@ body:
       placeholder: Eg. https://example.com/press-kit OR https://example.com/logo.svg
       description: |
         Optional. Add URL for **press kit** or _logo SVG / EPS / AI vector resource_, preferably from official source ([instructions for finding these](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#finding-the-source-material)).
+
   - type: markdown
     attributes:
       value: |
@@ -85,6 +91,7 @@ body:
         
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
         
+
 
   - type: markdown
     attributes:
@@ -103,10 +110,13 @@ body:
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
+
   - type: checkboxes
     id: issue-checks
     attributes:
       label: Confirmations
+      description: |
+        **IMPORTANT:** Answer truthfully.
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
@@ -114,7 +124,7 @@ body:
           required: true
         - label: I used proper capitalization / spelling for the brand / site / app on the issue title _(text field at the top)_.
           required: true
-        - label: I keep the formatting of the issue title _(text field at the top)_.
+        - label: I keep the formatting of the issue title intact _(text field at the top)_.
           required: true
         - label: The URL that I added meets [the requirements](#url-requirements).
           required: true

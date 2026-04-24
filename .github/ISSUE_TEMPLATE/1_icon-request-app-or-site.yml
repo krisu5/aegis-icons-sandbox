@@ -22,10 +22,12 @@ body:
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
+
   - type: markdown
     attributes:
       value: |      
         <a name="url-requirements"></a>
+        
   - type: input
     id: site_app-url
     attributes:
@@ -35,7 +37,8 @@ body:
         2. **Link should be the homepage of the site** (not login page or any other miscellaneous page).
       placeholder: Eg. https://example.com
     validations:
-      required: true  
+      required: true 
+       
   - type: markdown
     attributes:
       value: |
@@ -46,6 +49,7 @@ body:
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
+
   - type: input
     id: logo-url
     attributes:
@@ -53,6 +57,7 @@ body:
       placeholder: Eg. https://example.com/press-kit OR https://example.com/logo.svg
       description: |
         Optional. Add URL for **press kit** or _logo SVG / EPS / AI vector resource_, preferably from official source ([instructions for finding these](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#finding-the-source-material)).
+  
   - type: markdown
     attributes:
       value: |
@@ -68,12 +73,14 @@ body:
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
+
   - type: textarea
     id: 2fa-proof
     attributes:
       label: Proof of the Aegis-compatible 2FA
       description: |
         Optional, but recommended!
+        
   - type: markdown
     attributes:
       value: |
@@ -99,16 +106,20 @@ body:
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
 
+
   - type: textarea
     id: anything-else
     attributes:
       label: Anything else?
       description: |
         Optional text field to add other info: extra info about branding, kudos etc.
+        
   - type: markdown
     attributes:
       value: |
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
+
+
 
   - type: checkboxes
     id: issue-checks
@@ -123,7 +134,7 @@ body:
           required: true
         - label: I used proper capitalization / spelling for the brand / site / app on the issue title _(text field at the top)_.
           required: true
-        - label: I keep the formatting of the issue title _(text field at the top)_.
+        - label: I keep the formatting of the issue title intact _(text field at the top)_.
           required: true
         - label: The URL that I added meets [the requirements](#url-requirements).
           required: true
