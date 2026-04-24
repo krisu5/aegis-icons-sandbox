@@ -85,6 +85,7 @@ body:
         _Adding resource doesn't guarantee that aegis-icons will use it for the icon._
         
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
+        
 
   - type: markdown
     attributes:
@@ -102,9 +103,10 @@ body:
         
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
         
+        
   - type: checkboxes
     id: terms
-    attributes:*
+    attributes:
       label: Confirmations
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
