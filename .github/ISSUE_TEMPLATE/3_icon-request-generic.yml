@@ -1,5 +1,5 @@
 name: Icon request (generic)
-description: Suggest a new _generic_ icon (i.e. icon that doesn't represent any brand and uses symbols).
+description: Suggest a new *generic* icon (i.e. icon that doesn't represent any brand and uses symbols).
 title: "Generic icon request: "
 labels: ["New Icon", "Generic"]
 body:
