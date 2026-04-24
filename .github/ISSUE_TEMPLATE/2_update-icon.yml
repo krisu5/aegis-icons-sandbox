@@ -25,8 +25,8 @@ body:
 
   - type: markdown
     attributes:
-      value: |
-        <a name="url-requirements"></a>
+      value: <a name="url-requirements"></a>
+      
   - type: input
     id: site_app-url
     attributes:
@@ -51,8 +51,7 @@ body:
     id: update-reason
     attributes:
       label: Reason for update
-      description: |
-        Please write explanation on the "Anything else?" section _if_ you selected "brand changed their name" or "other".
+      description: Please write explanation on the "Anything else?" section _if_ you selected "brand changed their name" or "other".
       options:
         - Redesigned logo or other brand update
         - Brand changed their name
@@ -90,6 +89,7 @@ body:
   - type: markdown
     attributes:
       value: <a name="explanation"></a>
+      
   - type: textarea
     id: anything-else
     attributes:
@@ -101,10 +101,10 @@ body:
         :point_up: **Required** if you selected `Brand changed their name` or `Other` as reason for update. Explain in detail, so we understand the situation.
         
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
-        
-        
+
+
   - type: checkboxes
-    id: terms
+    id: issue-checks
     attributes:
       label: Confirmations
       options:

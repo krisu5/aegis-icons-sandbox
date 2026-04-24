@@ -27,7 +27,7 @@ body:
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
   
   - type: checkboxes
-    id: terms
+    id: issue-checks
     attributes:
       label: Confirmations
       options:

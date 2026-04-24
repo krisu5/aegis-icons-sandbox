@@ -111,11 +111,10 @@ body:
         <!-- SECTION BREAK --> <br> <!-- SECTION BREAK -->
 
   - type: checkboxes
-    id: terms
+    id: issue-checks
     attributes:
       label: Confirmations
-      description: |
-        **IMPORTANT:** Answer truthfully.
+      description: **IMPORTANT:** Answer truthfully.
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
