@@ -1,5 +1,5 @@
 name: Icon request (generic)
-description: Suggest a new *generic* icon (i.e. icon that doesn't represent any brand and uses symbols).
+description: Suggest a new _generic_ icon (i.e. icon that doesn't represent any brand and uses symbols).
 title: "Generic icon request: "
 labels: ["New Icon", "Generic"]
 body:
@@ -7,13 +7,13 @@ body:
     attributes:
       value: |
         > [!IMPORTANT]
-        > ### :loudspeaker: [Read our issue guidelines first](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) if you haven't already! *Always recheck them for any guideline updates.*
+        > ### :loudspeaker: [Read our issue guidelines first](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) if you haven't already! _Always recheck them for any guideline updates._
         > 
-        > - :angry: **If you don't read / follow the issue guidelines**, your issue(s) might **get rejected** and, *in the worse case*, **get you banned indefinitely.**
+        > - :angry: **If you don't read / follow the issue guidelines**, your issue(s) might **get rejected** and, _in the worse case_, **get you banned indefinitely.**
         > - :bangbang: Do not request multiple icons in single issue, make multiple issues instead.
         >
-        > ### :triangular_flag_on_post: Issue title formatting *(text field at the top)*
-        > - Remember to **add symbol name** at the end of *"Generic icon request:"* text.
+        > ### :triangular_flag_on_post: Issue title formatting _(text field at the top)_
+        > - Remember to **add symbol name** at the end of _"Generic icon request:"_ text.
         >   - Eg. `Generic icon request: Education`
         > - Do not change the formatting of the title!
         >
@@ -36,11 +36,13 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Confirmation
+      label: Confirmations
       options:
         - label: I have read and followed the [issue guidelines](https://github.com/aegis-icons/aegis-icons/blob/master/CONTRIBUTING.md#issue-guidelines) & issue form.
           required: true
-        - label: I did not change the formatting of the issue title *(text field at the top)*.
+        - label: I added the symbol name to the issue title _(text field at the top)_.
+          required: true
+        - label: I keep the formatting of the issue title _(text field at the top)_.
           required: true
         - label: I did not read anything what this issue form said.
           required: false
