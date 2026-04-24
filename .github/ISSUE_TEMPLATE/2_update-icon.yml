@@ -128,7 +128,7 @@ body:
           required: true
         - label: The URL that I added meets [the requirements](#url-requirements).
           required: true
-        - label: _If I selected **Brand changed their name** or **Other** as reason for update,_ then I also wrote explanation to ["Anything else?" field](#explanation).
+        - label: _If I selected **Brand changed their name** or **Other** as reason for update,_ then I also [wrote explanation](#explanation).
           required: true
         - label: I did not read anything what this issue form said.
           required: false
