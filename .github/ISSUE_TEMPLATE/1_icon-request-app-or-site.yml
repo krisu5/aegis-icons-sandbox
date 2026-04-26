@@ -63,7 +63,6 @@ body:
       value: |
         - :x: **Unaccepted resources:** JPG, PNG, GIF, WebP, AVIF, ICO or [any other raster image](https://en.wikipedia.org/wiki/Image_file_format#Raster_formats_(2D)).
           - Please leave it empty if you **haven't found** vector resources. Raster resources aren't helpful.
-          - _[Why vector images instead of raster (a.k.a. bitmap) images](https://www.lifewire.com/vector-and-bitmap-images-1701238#toc-ease-of-use-vectors-are-more-robust)_.
         - :x: **NO [data URIs](https://en.wikipedia.org/wiki/Data_URI_scheme), SVG code** or anything **that's NOT web URL!** _(Forbidden because of long character lengths.)_
           - Data URI starts with: `data:image/` (and so forth).
           - SVG code starts with: `<svg` (and so forth).
