@@ -132,6 +132,14 @@
             ]
         },
         {
+            "name": "Aer Lingus",
+            "filename": "icons/1_Primary/Aer Lingus.svg",
+            "category": null,
+            "issuer": [
+                "Aer Lingus"
+            ]
+        },
+        {
             "name": "AirVPN",
             "filename": "icons/1_Primary/AirVPN.svg",
             "category": null,
@@ -1084,6 +1092,14 @@
             ]
         },
         {
+            "name": "Coretax",
+            "filename": "icons/1_Primary/Coretax.svg",
+            "category": null,
+            "issuer": [
+                "Coretax"
+            ]
+        },
+        {
             "name": "Coursera",
             "filename": "icons/1_Primary/Coursera.svg",
             "category": null,
@@ -1785,6 +1801,14 @@
             "category": null,
             "issuer": [
                 "Firefly III"
+            ]
+        },
+        {
+            "name": "Flip",
+            "filename": "icons/1_Primary/Flip.svg",
+            "category": null,
+            "issuer": [
+                "Flip"
             ]
         },
         {
@@ -3284,6 +3308,14 @@
             ]
         },
         {
+            "name": "Midtrans",
+            "filename": "icons/1_Primary/Midtrans.svg",
+            "category": null,
+            "issuer": [
+                "Midtrans"
+            ]
+        },
+        {
             "name": "Migadu",
             "filename": "icons/1_Primary/Migadu.svg",
             "category": null,
@@ -4116,6 +4148,14 @@
             ]
         },
         {
+            "name": "Pintu",
+            "filename": "icons/1_Primary/Pintu.svg",
+            "category": null,
+            "issuer": [
+                "Pintu"
+            ]
+        },
+        {
             "name": "Pixelfed",
             "filename": "icons/1_Primary/Pixelfed.svg",
             "category": null,
@@ -4177,6 +4217,14 @@
             "category": null,
             "issuer": [
                 "Plex"
+            ]
+        },
+        {
+            "name": "Pluang",
+            "filename": "icons/1_Primary/Pluang.svg",
+            "category": null,
+            "issuer": [
+                "Pluang"
             ]
         },
         {
@@ -5676,6 +5724,14 @@
             ]
         },
         {
+            "name": "USCIS",
+            "filename": "icons/1_Primary/USCIS.svg",
+            "category": null,
+            "issuer": [
+                "USCIS"
+            ]
+        },
+        {
             "name": "Uber",
             "filename": "icons/1_Primary/Uber.svg",
             "category": null,
@@ -5913,6 +5969,14 @@
             "category": null,
             "issuer": [
                 "Vivaldi"
+            ]
+        },
+        {
+            "name": "Vodafone",
+            "filename": "icons/1_Primary/Vodafone.svg",
+            "category": null,
+            "issuer": [
+                "Vodafone"
             ]
         },
         {
@@ -6169,6 +6233,14 @@
             "category": null,
             "issuer": [
                 "XenForo"
+            ]
+        },
+        {
+            "name": "Xendit",
+            "filename": "icons/1_Primary/Xendit.svg",
+            "category": null,
+            "issuer": [
+                "Xendit"
             ]
         },
         {
@@ -6497,14 +6569,6 @@
             "category": null,
             "issuer": [
                 "mail.de"
-            ]
-        },
-        {
-            "name": "mailbox.org v1",
-            "filename": "icons/1_Primary/mailbox.org v1.svg",
-            "category": null,
-            "issuer": [
-                "mailbox.org v1"
             ]
         },
         {
@@ -7140,11 +7204,11 @@
             ]
         },
         {
-            "name": "Mozilla fg.var",
-            "filename": "icons/2_Variations/Mozilla fg.var.svg",
+            "name": "Mozilla bg.var",
+            "filename": "icons/2_Variations/Mozilla bg.var.svg",
             "category": null,
             "issuer": [
-                "Mozilla fg.var"
+                "Mozilla bg.var"
             ]
         },
         {
@@ -7209,6 +7273,14 @@
             "category": null,
             "issuer": [
                 "Obsidian Entertainment bg.var"
+            ]
+        },
+        {
+            "name": "Odido bg.var",
+            "filename": "icons/2_Variations/Odido bg.var.svg",
+            "category": null,
+            "issuer": [
+                "Odido bg.var"
             ]
         },
         {
